@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+Options -Indexes
+ErrorDocument 404 /files/404.html
