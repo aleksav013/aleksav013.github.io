@@ -1,0 +1,10 @@
+Index of ./domaci/Domaci iz analize/1zad
+0 [.](.)
+0 [..](..)
+4.0K [1a.tex](1a.tex)
+4.0K [1b.tex](1b.tex)
+4.0K [1dj.tex](1dj.tex)
+4.0K [1d.tex](1d.tex)
+4.0K [1g.tex](1g.tex)
+4.0K [1v.tex](1v.tex)
+4.0K [index.md](index.md)

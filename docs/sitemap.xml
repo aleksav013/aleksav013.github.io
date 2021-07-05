@@ -4,7 +4,56 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://aleksa.cf/latex/public/</loc><lastmod>2021-07-05</lastmod><priority>1.0</priority></url>
-<url><loc>https://aleksa.cf/latex/</loc><lastmod>2021-07-05</lastmod><priority>1.0</priority></url>
-<url><loc>https://aleksa.cf/index.html</loc><lastmod>2021-07-05</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Paskalova teorema/Paskalova teorema/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Paskalova teorema/Paskal_prezentacija/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Paskalova teorema/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Projekat iz racunarstva/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika prezentacija/io/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika prezentacija/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika prezentacija/cpp/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika-Aleksa Vuckovic/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/Probijanje zvucnog zida/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/fizikavezbeV2/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/fizikavezbe3deo/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/fizikavezbe/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/Kondenzatori/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/fizikavezbe2deo/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/fizika/Tajna u oku crvendaca/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Apstrakt Geometrijske Nejednakosti/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Prezentacija/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/Abstract Geometric Inequalities/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Geometrijske nejednakosti/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/template/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/labvezbe/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/template_beamer/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Domaci iz analize/1zad/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Domaci iz analize/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/analiza/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/pismo maturantima podgorica/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/prsteni_laag/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Pismeni zadatak iz srpskog/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Domaci zadatak iz geometrije/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Oblak_u_pantalonama-Aleksa_Vuckovic/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/domaci iz hemije/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Balzak, Aleksa Vučković 2c/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Verizni razlomci/Verizhni razlomci v1.0/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Verizni razlomci/Abstract Continued Fractions/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Verizni razlomci/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/opisana/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/upisana/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/zadaci/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/index.html</loc><lastmod>2021-07-06</lastmod><priority>1.0</priority></url>
 </urlset>

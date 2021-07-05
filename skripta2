@@ -1,2 +1,2 @@
-#!/bin/bash
-ls -la $1 | sed '1d'|  awk '{print $5"    ["$9"]("$9")"}'
+find src/latex/public -name "index.md" -delete
+./indexer "src/latex/public"

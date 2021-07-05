@@ -1,0 +1,52 @@
+#!/bin/sh
+
+curr="."
+
+dir() {
+    if [ -f "index.html" ]
+    then
+	echo "Postoji index.html"
+	exit
+    fi
+
+    file="index.md"
+
+    if [ -f "$file" ]
+    then
+	echo "Postoji $file"
+    else
+	echo "Index of $curr" >> $file 
+	if [ ! "$curr" = "." ]
+	then
+	    echo "0 [.](.)" >> $file
+	    echo "0 [..](..)" >> $file
+	fi
+
+	for i in *
+	do
+	    echo "$(du -hd0 "$i" | cut -f1) [$i]($i)" >> "$file"
+	done
+    fi
+}
+
+index() {
+    dir
+    for i in *
+    do
+	if [ -d "$i" ]
+	then
+	    cd "$i"
+	    curr="$curr/$i"
+	    index
+	    cd ..
+	    curr=${curr%/*}
+	fi
+    done
+}
+
+main() {
+    cd $1
+    index
+}
+
+main $1
