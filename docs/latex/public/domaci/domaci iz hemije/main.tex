@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+\usepackage[ a4paper,left=20mm,top=10mm,right=10mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{amsthm}
+\newcommand\tsd{\theoremstyle{definition}}
+\newcommand\tsr{\theoremstyle{remark}}
+\setlength{\tabcolsep}{17pt}
+
+\tsd\newtheorem{zad}{Zadatak}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+\newcommand\ii{\eng{(II)}\srb{}}
+\newcommand\iii{\eng{(III)}\srb{}}
+
+\title{\bf{Domac1i zadatak, Uvod u organsku hemiju}}
+\author{\Large Aleksa Vuchkovic1 2c}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+\begin{zad}a)\\
+\begin{center}
+    \chemfig{CH_3-CH(-[2]CH_3)-CH_2-CH_3}
+\end{center}
+b) \eng\ce{C5H12}
+\end{zad}
+\begin{zad}\leavevmode\\[-5mm]
+\begin{table}[h]
+\begin{tabular}{ll}
+$V(C_xH_y)=1.12$\eng{dm}$^3$ & $M(C_xH_y)=\cfrac{V_mm}{V}=44\frac{g}{mol}$ \\
+$m(C_xH_y)=2.2$\eng{g}     & $xM(C)+yM(H)=M(C_xH_y)$     \\[1mm]
+$81,82\%\, \eng{C}$  & $\cfrac{xM(C)}{xM(C)+yM(H)}=0,8182$       \\[3mm]
+$18,18\%\, \eng{H}$  & $xM(C)=M(C_xH_y)\cdot 0,8182=36\frac{g}{mol}$   \\
+& $x=3\Rightarrow y=8$
+\end{tabular}\\[5mm]
+Molekulska, kao i empirijska formula su $C_3H_8$, zato shto je NZD(3,8)$=$1.
+\end{table}
+
+\end{zad}
+\end{document}

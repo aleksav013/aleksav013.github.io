@@ -1,0 +1,128 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=15mm,top=10mm,right=15mm,bottom=10mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{cancel}
+%\usepackage{multicol}
+%\newcommand\tsd{\theoremstyle{definition}}
+%\newcommand\tsr{\theoremstyle{remark}}
+\setlength{\parindent}{0pt}
+
+%\tsd\newtheorem*{zad}{Zadatak}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+\newcommand*{\as}{\stackrel{\text{$AS$}}{=}}
+\newcommand{\bm}{\begin{bmatrix}}
+\newcommand{\enm}{\end{bmatrix}}
+
+\title{\bf{Domac1i zadatak iz geometrije}}
+\author{\Large Aleksa Vuchkovic1, 3c}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+
+\textbf{Zadatak 5.} Neka je $G$ grupa i $n$ prirodan broj takav da za sve $a$, $b$ $\in$ $G$ vazhe jednakosti
+\begin{align}
+    (ab)^n=&a^nb^n,\\ 
+    (ab)^{n+1}=&a^{n+1}b^{n+1} \quad{\text i }\label{druga}\\ 
+    (ab)^{n+1}=&a^{n+1}b^{n+1}.\label{treca}
+\end{align}
+Dokazati da je $G$ Abelova grupa.\\
+
+\textit{Reshenje}.\\
+%\begin{multicols}{2}
+Iz (\ref{druga}) dobijamo sledec1e:
+\begin{align*}
+    a\cdot b\cdot(ab)^{n}=&a\cdot a^{n}\cdot b^{n}\cdot b\\
+    \cancel a\cdot b\cdot a^n\cdot\cancel {b^n}=&\cancel a\cdot a^{n}\cdot b\cdot\cancel {b^{n}}\\
+    b\cdot a^n=&a^{n}\cdot b \tag{*}\label{*}
+\end{align*}
+Iz (\ref{treca}) dobijamo sledec1e:
+\begin{align*}
+    a\cdot b\cdot(ab)^{n+1}=&a\cdot a^{n+1}\cdot b^{n+1}\cdot b\\
+    \cancel a\cdot b\cdot a^{n+1}\cdot\cancel{b^{n+1}}=&\cancel a\cdot a^{n+1}\cdot b\cdot\cancel{b^{n+1}}\\
+    b\cdot a^{n+1}=&a^{n+1}\cdot b\\
+    b\cdot a^{n}\cdot a=&a^{n}\cdot a\cdot b
+\end{align*}
+%\end{multicols}
+Ubacivanjem (\ref{*}) u poslednju jednachinu dobijamo:
+\begin{align*}
+    \cancel{a^{n}}\cdot b\cdot a=&\cancel{a^{n}}\cdot a\cdot b\\
+    b\cdot a=&a\cdot b.
+\end{align*}
+\textbf{Zadatak 26.} Centar grupe $Z(G)$ grupe $G$ je $$Z(G)=\{x\in G\ |\ gx=xg \text{ za sve }g\in G\}$$ skup elemenata koji komutiraju sa svim elementima u grupi. Dokazati da je $Z(G)$ podgrupa od $G$. Dati primer grupe $G$ takve da je $Z(G)\not = {e},G.$\\
+
+\textit{Reshenje}.\\
+a) $Z(G)$ je podgrupa od $G$ stoga je potrebno samo dokazati da je $Z(G)$ grupa.\\
+1) zatvorenost
+\begin{align*}
+    &a\in Z(G),\quad b\in Z(G), \quad g\in G\\
+    &(a*b)*g\as a*(b*g)\stackrel{b\in Z(G)}{=}a*(g*b)\as (a*g)*b\stackrel{a\in Z(G)}{=}(g*a)*b\as g*(a*b)
+\end{align*}
+2) asocijativnost (restrikcija od $G$)\\
+3) neutralni element\\
+\begin{align*}
+    &e*g=g*e \text{ (po definiciji)}\\
+    &e\in Z(G)
+\end{align*}
+\newpage
+4) inverzni element\\
+$g*g^{-1}=g^{-1}*g=e \quad\Rightarrow\quad g^{-1}\in Z(G)$ \\\\
+Na osnovu prethodne 4 stavke vazhi da je $Z(G)$ podgrupa od $G$.\\
+
+b) Primer grupe $G$ takve da je $Z(G)\not = e, G$ je\\
+%\Large\begin{tabular}{c||c|c|c|c|c}
+%    $+$ & $e$ & 3 & 4 & 5 & 6\\
+%    \hline\hline
+%    $e$ & $e$ & 3 & 4 & 5 & 6\\
+%    \hline
+%    1 & 2 & $e$ & 4 & 5 & 6\\
+%    \hline
+%    1 & 2 & 3 & $e$ & 5 & 6\\
+%    \hline
+%    1 & 2 & 3 & 4 & $e$ & 6\\
+%    \hline
+%    1 & 2 & 3 & 4 & 5 & $e$\\
+%\end{tabular}
+$$G=\left\{\bm a & b\\c & d \enm |\quad a,b,c,d\in\mathbb{Z},\quad ad-bc=1 \right\},$$
+$$\bm a&b\\c&d \enm\cdot\bm m&n\\p&q \enm =\bm am+bp&an+bq\\cm+dp&cn+dq \enm\cdot$$
+Potrebno je pokazati da je $(G,\cdot)$ grupa i da $Z(G)\not = e, G$.\\
+\eng{\textbf{I)}}\srb{} Dokaz da je $(G,\cdot)$ grupa:\\
+1) zatvorenost\\
+\begin{align*}
+    ad-bc=1 \quad\land\quad mq-np=1 \quad\Rightarrow \\
+    (am+bp)\cdot(cn+dq)-(an+bq)\cdot(cm+dp)=1\\
+    \cancel{amcn}+bpcn+dqam+\cancel{bpdq}-\cancel{ancm}-bqcm-\cancel{dpbq}-dpqn=1\\
+    bpcn+dqam-bqcm-dpqn=1\\
+    mq(da-bc)+ph(bc-ad)=1\\
+    (mq-ph)\cdot(da-bc)=1\\
+    1\cdot1=1
+\end{align*}
+2) asocijativnost (vazhi iz mnozhenja matrica)\\
+3) neutral $$\bm 1&0\\0&1\enm\cdot$$
+4) inverz
+$$\bm a&b\\c&d \enm\cdot\bm m&n\\p&q \enm =\bm am+bp&an+bq\\cm+dp&cn+dq \enm=\bm 1&0\\0&1\enm\cdot$$
+\begin{align*}
+    mq-np=1\\
+    am=1-bp\quad an=-bq\\
+    cm=-dp\quad cn=1-dq\\
+    m,n,p,q=?
+\end{align*}
+Kao reshenje prethodnih jednachina dobijamo da je inverz za matricu $\bm a&b\\c&d \enm$ jednak $\bm d&-b\\-c&a \enm\cdot$\\\\
+\eng{\textbf{II)}}\srb{} Dokaz da grupa $(G,\cdot)$ nije komutativna i da $Z(G)\not = e, G$ tj. da ima bar dva razlichita elementa.
+\begin{align*}
+\bm a&b\\c&d \enm\cdot\bm m&n\\p&q \enm =&\bm am+bp&an+bq\\cm+dp&cn+dq \enm,\\
+\bm m&n\\p&q \enm\cdot\bm a&b\\c&d \enm =&\bm ma+nc&mb+nd\\pa+qc&pb+qd \enm,\\
+\bm a&b\\c&d \enm\cdot\bm m&n\\p&q \enm&\cancel= \bm m&n\\p&q \enm\cdot\bm a&b\\c&d\enm,\\
+\end{align*}pa mnozhenje matrica nije komutativno.\\
+\newpage
+Ostaje nam samo da pokazhemo da $Z(G)$ ima bar dva razlichita elementa.\\
+Isprobavanjem dobijamo da grupi $Z(G)$ osim inverza pripada i $\bm -1&0\\0&-1\enm\cdot$\\
+Centar grupe je $Z(G)=\left\{\bm 1&0\\0&1\enm ,\bm -1&0\\0&-1\enm,\cdots\right\}\cdot$\\\\
+Na osnovu toga pokazali smo da postoji grupa $(G,\cdot)$ takva da $Z(G)\cancel{=}e,G.$
+\end{document}

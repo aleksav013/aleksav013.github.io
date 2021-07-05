@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\definecolor{rvwvcq}{rgb}{0.08235294117647059,0.396078431372549,0.7529411764705882}
+\definecolor{sexdts}{rgb}{0.1803921568627451,0.49019607843137253,0.19607843137254902}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-3,
+xmax=12,
+ymin=-1,
+ymax=7,
+xtick={-3,-2,...,12},
+ytick={-1,0,...,7},]
+\clip(-3.0539345856192823,-1.5274219242799891) rectangle (12.00466028898383,7.030966339227116);
+\draw[line width=2pt,color=sexdts,smooth,samples=100,domain=1:12.00466028898383] plot(\x,{5^(3-(\x))});
+\begin{scriptsize}
+\draw[color=sexdts] (2.1,6.5) node {$f$};
+\draw [fill=rvwvcq] (2,5) circle (2.5pt);
+\draw[color=rvwvcq] (2.104546011563099,5.278906641446743) node {$A$};
+\draw [fill=rvwvcq] (3,1) circle (2.5pt);
+\draw[color=rvwvcq] (3.107583905459673,1.2797815320149595) node {$B$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

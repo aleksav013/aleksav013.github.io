@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[ a4paper,total={170mm,257mm},left=15mm,top=0mm,bottom=10mm,right=15mm]{geometry}
+\usepackage[OT2]{fontenc}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\newcommand\texteng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\pagenumbering{gobble}
+\usepackage{hyperref}
+\def \zn{,\kern-0.09em,}
+\title{\textbf{\huge Verizhni razlomci}}
+\date{}
+\author{}
+\begin{document}
+\setlength{\columnsep}{1.2cm}
+\maketitle
+\begin{center}
+\vspace*{-1.5cm}
+ \large\textit{\textbf{Autor:} Aleksa Vuchkovic1, uchenik 2. razreda Matematichke gimnazije}\\
+    \textit{\textbf{Mentor:} Danica Zechevic1}\\
+    \normalsize\textit{Regionalni centar za talente \zn Mihajlo Pupin", Dimitrija Tucovic1a 2, Panchevo}
+\end{center}
+\begin{multicols}{2}
+ \noindent
+\section*{\underline{Uvod}}
+Prost verizhni razlomak je izraz oblika
+\begin{equation}
+\label{eq1}
+    a_0+\frac{1}{a_1+\frac{1}{a_2+\frac{1}{a_3+\dots}}},\tag{$*$}
+\end{equation}
+gde su $a_1$, $a_2$,... prirodni brojevi i $a_0$ ceo broj.\\
+Izraz \eqref{eq1} chesto pishemo kao [$a_0, a_1, a_2,...,a_n]$ radi kompaktnosti. U ovom zapisu ne \\\text podrazumevamo obavezno da su $a_i$ celi brojevi.\\
+Izraz $[a_0,a_1,...,a_k]$ zovemo $k$-tim \textbf{konvergentom} za $[a_0,a_1,...,a_n]$, a izraz $a'_k=[a_k,a_{k+1},...,a_n]$ $k$-tim kompletnim kolichnikom $(n \geq k)$. Ova dva izraza c1e nam biti vrlo znachajna za dokazivanje svojstva verizhnih razlomaka i njihovih konvergenata.\\
+Verizhni razlomci postoje vec1 stotinama godina. Svaki konachan zapis verizhnog
+razlomka odgovara racionalnom broju, dok beskonachan odgovara \text iracionalnom.
+Verizhni razlomci su povezani sa Euklidovim algoritmom, imaju svoju primenu u
+kalendaru, zapisivanju broja $\pi$ i broja $e$ u obliku razlomka, koriste se kod nalazhenja reshenja Pelove jednachine($x^2-dy^2=1$).
+
+\section*{\underline{Cilj}}
+Cilj ovog nauchnoistrazhivachkog rada je \text dokazivanje svojstva verizhnih razlomaka, prikazivanje \text realnih brojeva u vidu verizhnog razlomka, pronalazhenje \text najbolje aproksimacije iracionalnog broja racionalnim ili aproksimacija razlomka sa velikim vrednostima imenioca i brojioca na manje brojevne vrednosti u cilju laksheg izrachunavanja i primene u praksi sa minimalnom greshkom.
+
+\section*{\underline{Metoda rada}}
+Metode istrazhivanja su \text prikupljanje literature, kao i njihovo tumachenje i \text{reshavanje}.
+Trazhena je \text korelacija izmedju teorijskih postavki i \text praktichne
+primene, detaljno je prikazan \text proces dolazhenja do reshenja. U radu je
+korish$ $c1ena kombinovana metoda \text istrazhivanja, prouchavana je
+literatura gde je raznovrsna \text primena verizhnih razlomaka. Osim toga,  razvoj racionalnog broja u verizhni razlomak prikazan je  slikovno, radi laksheg pojmljivanja.
+\noindent
+
+\section*{\underline{Rezultati istrazhivanja}}
+Predmet obrade ovog rada su verizhni razlomci, konvergente verizhnih razlomaka, kao i njihova \text svojstva i primene. U daljem tekstu imac1ete \text priliku da vidite neke od mnogobrojnih teorema i njihovih posledica. Nachinjen je izbor najbitnijih stvari na ovu temu po autorovom mishljenju sa \text kojima c1e se chitalac susreti u predstojec1em tekstu.\columnbreak\\
+Verizhni razlomci nisu pogodni za osnovne rachunske operacije. Ipak, nije teshko izvesti \text operacije $x \to 1/x$ i $x \to -x$ pomoc1u njih, \text korish{}c1enjem jednakosti:
+\begin{align*}
+    &[a_0,a_1,...,a_n] \cdot [0,a_0,a_1,...,a_n]=0 &\text{za } a_0\geq 1,& \text{ i}\\
+    &[a_0,a_1,...,a_n] + [-1-a_0,1,a_1-1,a_2,...,a_n] &\text{za } a_1>1.&
+\end{align*}
+Verizhni razlomak $[a_0, a_1, . . . , a_n]$ je jednak $\frac{p_n}{q_n}$, gde \text nizovi ($p_n$) i ($q_n$) zadovoljavaju
+\begin{center}
+$\begin{aligned}\\[-10mm]
+    &p_{-1}=1,& &p_0=a_0, &p_k=a_kp_{k-1}+p_{k-2}&\\[-3mm]
+    &&&&&&\quad\text{za } 2\leq k\leq n.\\[-3mm]
+    &q_{-1}=1,& &q_0=1, &q_k=a_kq_{k-1}+q_{k-2}&
+\end{aligned}$
+\end{center}
+Osim prethodno navedenih operacija i rekurzivne veze izmedju konvergenti verizhnih razlomaka bitno je pomenuti i:\\
+\textit{Teoremu}, odnosno naredna dva identiteta\\[2mm]
+\begin{center}
+$\begin{aligned}\\[-13mm]
+    &p_nq_{n-1}-p_{n-1}q_n=(-1)^{n-1} \quad\text{ i}\\
+    &p_nq_{n-2}-p_{n-2}q_n=(-1)^na_n
+\end{aligned}$\\[1.5mm]
+\end{center}
+na osnovu kojih se zasnivaju sledec1e posledice:\\[3mm]
+(1) Konvergenti $\frac{p_n}{q_n}$ prostog verizhnog razlomka su neskrativi: nzd$(p_n,q_n)=1$.\\[2mm]
+(2)
+$\displaystyle\frac{p_0}{q_0}<\frac{p_2}{q_2}<\frac{p_4}{q_4}\cdots<\frac{p_n}{q_n}<\cdots\frac{p_3}{q_3}<\frac{p_1}{q_1}.$\\[3mm]
+I na kraju, identitet koji daje vezu izmedju \text verizhnog razlomka i “obrnutog” parnjaka.\\[1.5mm]
+\text{Ako je $[a_0,a_1,...,a_n] =\frac{p_n}{q_n}$, onda je $[a_n,a_{n-1},...,a_0]=\frac{p_n}{p_{n-1}}$.}
+
+\section*{\underline{Zakljuchak}}
+Iako se ovi razlomci vishe ne spominju u srednjoshkolskim ud2benicima, njihova
+primena je i dalje neobichno shiroka i zanimljiva. Verizhni razlomci se pojavljuju u mnogim granama matematike: Diofantovim aproksimacijama, algebarskoj teoriji brojeva, teoriji kodiranja, algebarskoj geometriji, dinamichkim sistemima, ergodichkoj teoriji, topologiji, itd.  Matematichko \text objashnjenje za ovaj fenomen je bazirano na interesantnoj strukturi podskupa realnih brojeva sa samo dve \text operacije: sabiranje i inverzija. Ova struktura se prvi put pojavljuje u Euklidovom algoritmu, koji je poznat vec1 nekoliko hiljada godina. To je razlog zbog kojeg se verizhni razlomci mogu pronac1i daleko van teorije brojeva.
+
+\section*{\underline{Literatura}}
+[1] D. Djukic1 \textit{Verizhni razlomci}, Beograd, 2010/11. \texteng{\url{https://imomath.com/srb/dodatne/veriznirazlomci_ddj.pdf}}\\{}
+[2] S. Krushchev \textit{Orthogonal Polynomials and Continued Fractions}, Cambridge University Press, 2008.\\{}
+[3] W. Bosma, C. Kraaikamp \textit{Continued Fractions} \url{https://www.math.ru.nl/~bosma/Students/CF.pdf}
+\vfill\null
+ \end{multicols}
+  \pagebreak
+
+\end{document}

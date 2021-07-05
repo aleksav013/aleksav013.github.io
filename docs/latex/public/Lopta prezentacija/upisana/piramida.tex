@@ -1,0 +1,29 @@
+\documentclass[border=2mm12pt]{standalone}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{arrows,calc}
+\begin{document}
+\tdplotsetmaincoords{60}{110}
+\begin{tikzpicture}[scale=2]
+\def\R{0.6}
+\coordinate (O) at (-0.5,-0.8,-1);
+\fill[ball color=cyan!10, opacity=1.0]  (O) circle (0.935); % 3D lighting effect
+ \begin{scope}[tdplot_main_coords, shift={(0,0)}, rotate=0]
+\path
+      coordinate (A) at (-1,-1,-1)
+      coordinate (B) at (1,-1,-1)
+      coordinate (C) at (1,1,-1)
+      coordinate (D) at (-1,1,-1)
+      coordinate (S) at (-1,-1,1);
+      \draw[ dashed]
+     (A)--(S) (A)--(B)
+      (A)--(D)
+       ;
+\draw [fill opacity=0.4,fill=green!80!blue] (S) -- (B) -- (C) -- cycle;
+\draw [fill opacity=0.4,fill=orange!80!blue] (S) -- (C) -- (D) -- cycle;
+\foreach \v/\position in {A/below,B/below,C/below,D/right,S/above,O/right} {
+    \draw[fill=black] (\v) circle (0.7pt) node [\position=0.2mm] {$\v$};
+}
+\end{scope}
+\end{tikzpicture}
+\end{document} 

@@ -1,0 +1,262 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=15mm,top=10mm,bottom=5mm,right=15mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage{amsfonts}
+\usepackage{amsthm,amsmath}
+\newcommand\tsd{\theoremstyle{definition}}
+\newcommand\tsr{\theoremstyle{remark}}
+
+\usepackage{standalone}
+\usepackage{pgf,tikz,pgfplots}
+\usetikzlibrary{arrows}
+\pgfplotsset{compat=1.16}
+
+\usepackage{multicol}
+\usepackage{float}
+\addtolength{\jot}{-1mm}
+\usepackage{mathtools}
+
+\tsd\newtheorem{zad}{Zadatak}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+\newcommand{\D}{\displaystyle}
+
+\title{\bf{Domac1i zadatak iz analize}}
+\author{\Large Aleksa Vuchkovic1, 2c}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+
+\begin{zad} Skicirati grafike sledec1ih funkcija:\\
+
+\begin{multicols}{2}
+a) $f(x)=5^{3-x}$
+\begin{figure}[H]
+    \includestandalone[scale=0.5]{1zad/1a}
+    \label{fig:2a}
+\end{figure}
+\columnbreak
+b) $f(x)=3\cdot 5^{-|x|}$
+\begin{figure}[H]
+    \includestandalone[scale=0.7]{1zad/1b}
+    \label{fig:2b}
+\end{figure}
+\end{multicols}
+
+\begin{multicols}{2}
+v) $f(x)=3-5^{-|x|}$
+\begin{figure}[H]
+    \includestandalone[scale=0.7]{1zad/1v}
+    \label{fig:2v}
+\end{figure}
+\columnbreak
+g) $f(x)=2-|5-5^{-x}|$
+\begin{figure}[H]
+    \includestandalone[scale=0.6]{1zad/1g}
+    \label{fig:2g}
+\end{figure}
+\end{multicols}
+
+\begin{multicols}{2}
+d) $f(x)=max\{5^{-x},5^x\}$
+\begin{figure}[H]
+    \includestandalone[scale=0.6]{1zad/1d}
+    \label{fig:2d}
+\end{figure}
+\columnbreak
+dj) $f(x)=min\{5^{-x},5^x\}$
+\begin{figure}[H]
+    \includestandalone[scale=0.9]{1zad/1dj}
+    \label{fig:2dj}
+\end{figure}
+\end{multicols}
+
+\end{zad}
+
+\begin{zad} Odrediti domen i skup vrednosti funkcije:\\[1mm]
+a) $f(x)=3^{\sqrt{1-x^2}}\Rightarrow x\in [-1,1]\Rightarrow f(x)\in [1,3]$\\
+b) $f(x)=2^{\sqrt{x^2-1}}\Rightarrow x\in (-\infty,-1]\cup [1,+\infty)\Rightarrow f(x)\in [1,+\infty)$\\
+v) $f(x)=\left (\frac{1}{3}\right )^{\sin{x}}\Rightarrow x\in\mathbb{R}\Rightarrow f(x)\in [\frac{1}{3},3]$\\[0.5mm]
+g) $f(x)=\sqrt{0.5^x-8}=\sqrt{2^{-x}-2^3}\Rightarrow 2^{-x}-2^3\leq 0 \Rightarrow x\leq -3\Rightarrow x\in(-\infty,-3]\Rightarrow f(x)\in [0,+\infty)$\\
+\end{zad}
+
+\newpage
+
+\begin{zad} Reshiti jednachine:\\
+
+\begin{multicols}{2}
+\noindent
+\begin{align*}
+\text{a) } \left( \frac{1}{2}\right)^{1-x}&=\sqrt 2\\
+\left( \frac{1}{2}\right)^{1-x}&=\left( \frac{1}{2}\right)^{-\frac{1}{2}}\\
+1-x&= -\frac{1}{2}\\
+\Aboxed{x&=\frac{3}{2}}\cdot\\
+\end{align*}
+\begin{align*}
+\text{b) } 15^x&=5\cdot 3^x\\
+\not{3^x} \cdot 5^x&=5\cdot \not{3^x}\\
+\Aboxed{x&=1}.
+\end{align*}
+\begin{align*}
+\text{v) } 3\cdot 2^{2x-1}&=6^x\\
+\frac{3}{2}\cdot 4^{x}&=6^x\\
+\frac{3}{2}&=\left(\frac{6}{4}\right)^x\\
+\frac{3}{2}&=\left(\frac{3}{2}\right)^x\\
+\Aboxed{x&=1}.
+\end{align*}
+\begin{align*}
+\text{g) } 36^x-42\cdot 6^x+216&=0\\
+6^{2x}-42\cdot 6^x+216&=0\\
+6^x&=\frac{42\pm\sqrt{42^2-4\cdot 216}}{2}\\
+6^x&=\frac{42\pm 30}{2}\\
+6^x=36 &\lor 6^x=6\\
+\Aboxed{x&\in\{1,2\}}.
+\end{align*}
+\begin{align*}
+\text{d )} \sqrt{\left(5\sqrt 2 +7\right)^x}&+\sqrt{\left(5\sqrt 2 -7\right)^x}=198\\
+t&=\sqrt{\left(5\sqrt 2 +7\right)^x}\\
+t+\frac{1}{t}&=198\\
+t^2-198t+1&=0\\
+t&=\frac{198\pm\sqrt{198^2-4}}{2}\\
+t&=99\pm 70\sqrt{2}\\
+t&=99\pm 70\sqrt{2}=\left(5\sqrt 2 +7\right)^\frac{x}{2}\\
+99+70\sqrt{2}&=(5\sqrt{2}+7)^2,\\
+99-70\sqrt{2}=(5\sqrt{2}-7)^2&=\frac{1}{(5\sqrt{2}+7)^2}=(5\sqrt{2}+7)^{-2},\\
+\frac{x}{2}&=\pm2\\
+\Aboxed{x&=\pm4}.
+\end{align*}
+\begin{align*}
+\text{dj) } 4\cdot 2^{2x}=18\cdot 3^{2x}+6^x/:2^x\\
+4=18\cdot \left(\frac{3}{2}\right)^{2x}+\left(\frac{3}{2}\right)^x\\
+t=\left(\frac{3}{2}\right)^x\\
+0=18t^2+t-4\\
+t=\frac{-1\pm \sqrt{1+4\cdot 18\cdot 4}}{36}\\
+t=-\frac{1}{2} \lor t=\frac{4}{9}\\
+\left(\frac{3}{2}\right)^x=\frac{4}{9} \lor \left(\frac{3}{2}\right)^x=-\frac{1}{2}\\
+x=-2 \lor \bot \\
+\Aboxed{x\in\{-2\}}.
+\end{align*}
+\begin{align*}
+\text{e) } 9\cdot (9^x+9^{-x})-3\cdot (3^x+3^{-x})=72\\
+t=3^x\\
+9\cdot (t^2+\frac{1}{t^2})-3\cdot (t+\frac{1}{t})=72\\
+y=t+\frac{1}{t}\\
+y^2=t^2+\frac{1}{t^2}+2\\
+9\cdot(y^2-2)-3\cdot y=72\\
+3\cdot y^2-6-3\cdot y=72\\
+3\cdot y^2-y-30=0\\
+y_{1,2}=\frac{1\pm\sqrt{1+30\cdot3\cdot4}}{6}\\
+y_1=-3 \lor y_2=\frac{10}{3}\\
+\frac{10}{3}=t+\frac{1}{t}\\
+t^2-\frac{10}{3}\cdot t +1=0\\
+t=\frac{\frac{10}{3}\pm\sqrt{\frac{100}{9}-4}}{2}\\
+t_1=3 \lor t_2=\frac{1}{3}\\
+\Aboxed{x_{1,2}=\pm1}\\
+-3=t+\frac{1}{t}\\
+t^2+3\cdot t+1=0\\
+t=\frac{-3\pm\sqrt{9-4}}{2}\\
+t=\frac{-3\pm\sqrt{5}}{2}\\
+3^x=\frac{-3\pm\sqrt{5}}{2}.\\
+\text{Drugi deo nema reshenja,}\\
+\text{jer je desna strana jednachine manja od 0}.\\
+\text{Stoga jedina reshenja su:}\\
+\Aboxed{x\in\{1,2\}}.
+\end{align*}
+\begin{align*}
+\text{zh )} \left( \left(\sqrt[6]{81}\right)^{\frac{x}{5}-\sqrt{x}}\right)^{\frac{x}{5}+\sqrt{x}}=3^\frac{9}{5}\\
+\left( \left(3^\frac{4}{6}\right)^{\frac{x}{5}-\sqrt{x}}\right)^{\frac{x}{5}+\sqrt{x}}=3^\frac{9}{5}\\
+\left(\frac{4}{6}\right)\cdot\left(\frac{x}{5}-\sqrt{x}\right)\cdot\left(\frac{x}{5}+\sqrt{x}\right)=\frac{9}{5}\\
+\left(\frac{2}{3}\right)\cdot\left(\frac{x^2}{25}-x\right)\cdot=\frac{9}{5}\\
+x^2-25x-\frac{135}{2}=0\\
+x=\frac{25\pm\sqrt{625+\frac{135}{2}\cdot4}}{2}\\
+\Aboxed{x=\frac{25+\sqrt{895}}{2}}\text{ jer je }x>0.
+\end{align*}
+\begin{align*}
+\text{z) } 2^x+3^x=5^x/:3^x\\
+\left(\frac{2}{3}\right)^x+1=\left(\frac{5}{3}\right)^x\\
+\text{Leva strana je opadajuc1a, a desna rastuc1a,}\\
+\text{Stoga je jedino moguc1e reshenje:}\\
+\Aboxed{x=1}.
+\end{align*}
+\begin{align*}
+\text{i) } 10^x+11^x+12^x=13^x+14^x/:12^x\\
+\left(\frac{5}{6}\right)^x+\left(\frac{11}{12}\right)^x+1=\left(\frac{13}{12}\right)^x+\left(\frac{7}{6}\right)^x\\
+\text{Leva strana je opadajuc1a, a desna rastuc1a,}\\
+\text{Stoga je jedino moguc1e reshenje:}\\
+\Aboxed{x=2}.
+\end{align*}
+\end{multicols}
+\end{zad}
+
+
+
+\begin{zad} Reshiti nejednachine:\\[-5mm]
+\begin{multicols}{2}
+\noindent
+\begin{align*}
+\text{a) } \left( \frac{5}{4}\right)^{1-x}<(0,64)^{2(1+\sqrt x)}\\
+\left( \frac{5}{4}\right)^{1-x}<\left(\frac{4}{5}\right)^{4(1+\sqrt x)}\\
+\left( \frac{5}{4}\right)^{1-x}<\frac{5}{4}^{-4(1+\sqrt x)}\\
+1-x<-4\cdot(1+\sqrt{x})\\
+0<x-4\cdot\sqrt{x}-5\\
+(\sqrt{x}-5)\cdot(\sqrt{x}+1)>0\\
+\sqrt{x}\geq0 \land \sqrt{x}>5\Rightarrow x>25\\
+\Aboxed{x\in(25,+\infty)}.
+\end{align*}
+\begin{align*}
+\text{b) } 10^{4x^2-2x-2}\geq 100^{x-1,5}\\
+10^{4x^2-2x-2}\geq 10^{2x-3}\\
+4\cdot x^2-2\cdot x-2\geq 2\cdot x-3\\
+4\cdot x^2-4\cdot x+1\geq0\\
+(2\cdot x-1)^2\geq0\\
+\Aboxed{x\in\mathbb{R}}.
+\end{align*}
+\begin{align*}
+&\text{v) } \frac{3^x-9}{x^2-5x+6}>0\\
+&\frac{3^x-3^2}{(x-3)\cdot(x-2)}>0\\
+&i)x<2\Rightarrow 3^x-3^2<0, (x-3)\cdot(x-2)>0\Rightarrow\bot\\
+&ii)2\leq x\leq3\Rightarrow 3^x-3^2>0, (x-3)\cdot(x-2)<0\Rightarrow\bot\\
+&iii)x>3\Rightarrow 3^x-3^2>0, (x-3)\cdot(x-2)>0\Rightarrow x>3\\
+&\Aboxed{x\in(3,+\infty)}.
+\end{align*}
+\begin{align*}
+\text{g) } 3^{x-1}+3^{x-2}-3^{x-4}<315\\
+3^x\left(\frac{1}{3}+\frac{1}{9}-\frac{1}{81}\right)<315\\
+3^x\left(\frac{35}{81}\right)<315\\
+3^x<81\cdot9\\
+3^x<3^6\\
+\Aboxed{x\in(-\infty,6)}.
+\end{align*}
+\begin{align*}
+\text{d) }  \sqrt{\left(5+2\sqrt 6\right)^x}+\left(\sqrt 3 -\sqrt 2\right)^x\leq 10\\
+t=\left(\sqrt 3 -\sqrt 2\right)^x\\
+\sqrt{\frac{1}{t^2}}+t\leq10\\
+t+\frac{1}{t}\leq 10\\
+t^2-10\cdot t +1\leq 0\\
+t=5\pm2\cdot\sqrt{6}\\
+t\in[(\sqrt 3 -\sqrt 2)^{-2},(\sqrt 3 -\sqrt 2)^2]\\
+\Aboxed{x\in\{-2,2\}}.
+\end{align*}
+\begin{align*}
+&\text{dj) } 3^{x+2}\geq 3^{2x+5}-x\\
+&x\geq 3^{2x+5}-3^{x+2}\\
+&i)x<-3\Rightarrow 3^{2x+5}-3^{x+2}>-1\Rightarrow\bot\\
+&ii)-3\leq x<0\Rightarrow 3^{2x+5}-3^{x+2}\geq0\Rightarrow\bot\\
+&iii)0\leq x\Rightarrow f(x)=3^{2x+5}-3^{x+2} \\
+&f(x)\text{ raste eksponencijalno za razliku od }x\\
+&\text{Stoga ova nejednakost nema reshenja.}\\[-5mm]
+\end{align*}
+\begin{align*}
+\text{e) } 2^x+3^x+12<5^x/:5^x&\\
+1-\frac{2}{5}^x-\frac{3}{5}^x-\frac{12}{5^x}>0&\\
+f(x)=1-\left(\frac{2}{5}\right)^x-\left(\frac{3}{5}\right)^x-\frac{12}{5^x}\text{ je }\nearrow&\\
+\text{za }x=2\text{ } f(x)=0\Rightarrow x>2&\\
+\Aboxed{x\in(2,+\infty)}.
+\end{align*}
+\end{multicols}
+\end{zad}
+
+\end{document}

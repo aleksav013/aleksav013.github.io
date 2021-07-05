@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=20mm,top=15mm,right=20mm,bottom=20mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\newcommand\tsd{\theoremstyle{definition}}
+\newcommand\tsr{\theoremstyle{remark}}
+\usepackage{mathtools}
+\usepackage{changepage}
+
+\tsd\newtheorem{zad}{Zadatak}
+\tsd\newtheorem*{lem}{Lema}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newcommand{\ndiv}{\hspace{-4pt}\not|\hspace{2pt}}
+
+\title{\bf{Domac1i zadatak iz analize}}
+\author{\Large Aleksa Vuchkovic1, 2c}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{zad}
+Ako je $a^2+b^2=c^2$ dokazhi da $3|a \lor 3|b$.\\[3mm]
+$x^2\equiv 0,1\pmod{3}$\\[1mm]
+
+$\underbrace{ i)\, c^2\equiv 0\pmod{3} \Rightarrow 3|a^2 \land 3|b^2 \Rightarrow 3|a \land 3|b \quad ii)\, c^2\equiv 1\pmod{3} \Rightarrow 3|a^2 \lor 3|b^2 \Rightarrow 3|a \lor 3|b}$\\
+\centering Na osnovu toga bar jedan mora biti deljiv sa tri.
+
+\end{zad}
+\begin{lem}
+Ako je $a^2+b^2=c^2$ dokazhi da $5|abc$.\\[3mm]
+$x^2\equiv 0,1,4\pmod{5}$\\[1mm]
+Ostaci pri deljenju sa pet mogu biti $0+0=0, \ 0+1=1,\ 0+4=4,\ 1+4=0$
+\begin{center}
+    Na osnovu toga bar jedan od brojeva $a,b,c$ mora biti deljiv sa pet.
+\end{center}
+\end{lem}
+\begin{zad}
+Ako je $a,b,c$ Pitagorina trojka, dokazhi da je $60|a\cdot b\cdot c$.\\[3mm]
+Ako dokazhemo da tvrdjenje vazhi za primitivne trojke, dokazali smo i za sve druge pitagorine trojke jer je tada proizvod jednak $k^3\cdot a\cdot b\cdot c$.\\[2mm]
+$60=3\cdot 4\cdot 5 \Rightarrow$ Moramo dokazati deljivost sa $3$, $4$ i $5$.\\
+Iz prethodnog zadatka jasno je da $3$ deli bar jedan od brojeva $a$ ili $b$.\\
+Deljivost sa 4 dokazujemo na sledec1i nachin:\\
+$(a,b,c)=(2mn,n^2-m^2,n^2+m^2)$, gde su $m$ i $n$ razlichite parnosti.\\
+Stoga, 4 deli jedan od brojeva $a$ ili $b$ koji je oblika $2mn$.\\
+Na osnovu proshle leme imamo i deljivost sa pet. \qedsymbol
+\end{zad}
+\begin{zad}Nadji sve Pitagorine trojke takve da je $O=P$.\\[3mm]
+Reshenje zadatka mogu biti samo primitivne trojke:\\Za neku primitivnu trojku $(a,b,c)$ koja zadovoljava uslove zadatka ne vazhi da c1e $(ka,kb,kc)$ zadovoljavati uslove zadatka zbog toga shto $k\cdot O\neq P\cdot k^2$\\
+Zbog toga jedina reshenja mogu biti kada je $k=1$, tj kada su trojke primitivne.\\[2mm]
+$(a,b,c)=(2mn,n^2-m^2,n^2+m^2)$ ili $(a,b,c)=(n^2-m^2,2mn,n^2+m^2)$\\
+Stoga imamo da vazhi $2mn+n^2-m^2+n^2+m^2=mn(n^2-m^2)$.\\
+Sredjivanjem prethodnog izraza dobijamo sledec1e $2=(n-m)\cdot m$ pa je zbog toga jedino moguc1e reshenje $n=3$ i $m=2$. Na osnovu toga jedino reshenje je oblika $(a,b,c)=(5,12,13)$. \qedsymbol
+\end{zad}
+U daljem tekstu videc1ete par zadataka radjenih na prehodnom chasu.
+\begin{zad} Reshiti j-nu $1!+2!+...+x!=y^2$ u $\mathbb{N}$.\\[2mm]
+$x=1\Rightarrow 1!=y^2\Rightarrow y=1$\\
+$x=2\Rightarrow 1!+2!=y^2\Rightarrow y^2=3\ \bot$\\
+$x=3\Rightarrow 1!+2!+3!=y^2\Rightarrow y^2=9\Rightarrow y=3$\\
+$x=4\Rightarrow 1!+2!+3!+4!=y^2\Rightarrow y^2=33\ \bot$\\
+$x\geq 5\Rightarrow 1!+...+4!+5!+...+x!=y^2\Rightarrow\underbrace{33+5!+...+x!}_{\equiv 3\pmod{5}}=y^2\Rightarrow y^2\equiv 3\pmod{5}\ \bot$(Lema)\\
+\end{zad}
+
+\newpage
+\begin{zad} Reshiti j-nu $x^2+y^2+z^2=2xyz$.\\[2mm]
+Ako je $xyz\neq 0\Rightarrow x=2^a\cdot\alpha, y=2^b\cdot\beta, z=2^c\cdot\gamma,\ a,b,c\in\mathbb{N}_0,\ 2\ndiv\alpha,2\ndiv\beta,2\ndiv\gamma$\\
+\begin{adjustwidth}{0.25\linewidth}{}
+Bez umanjenja opshtosti neka je $0\leq a\leq b\leq c$.\\
+$2^{2a}\alpha^2+2^{2b}\beta^2+2^{2c}\gamma^2=2^{a+b+c+1}\alpha\beta\gamma\left/\right. :2^{2a}$\\
+$\alpha^2+2^{2b-2a}\beta^2+2^{2c-2a}\gamma^2=2^{b+c+1-a}\alpha\beta\gamma$\\
+$\alpha^2+(2^{b-a}\cdot\beta)^2+(2^{c-a}\cdot\gamma)^2=2^{b+c+1-a}\alpha\beta\gamma$\\
+$b>a\Rightarrow 2|2^{b-a}\cdot\beta,\ 2|2^{c-a}\cdot\gamma,\ 2|2^{b+c+1-a}\cdot\alpha\beta\gamma\Rightarrow 2|\alpha^2\Rightarrow 2|\alpha\ \bot$\\
+$\Rightarrow b=a\Rightarrow\alpha^2+\beta^2+(2^{c-a}\cdot\gamma)^2=2^{c+1}\cdot\alpha\beta\gamma$\\
+$c>a\Rightarrow 2|2^{c-a}\cdot\gamma\Rightarrow (2^{c-a}\cdot\gamma)^2\equiv 0\pmod{4},\ 2\ndiv\alpha,2\ndiv\beta\Rightarrow \alpha^2\equiv 1\pmod{4},\  \beta^2\equiv 1\pmod{4}\Rightarrow$\\
+$\Rightarrow 2^{c+1}\cdot\alpha\beta\gamma\equiv 2 \pmod{4}\ \bot(4|2^{c+1})$\\
+$\Rightarrow c=a\Rightarrow \alpha^2+\beta^2+\gamma^2=2^{c+1}\alpha\beta\gamma,\ 2\ndiv\alpha^2+\beta^2+\gamma^2,\ 2|2^{c+1}\alpha\beta\gamma\ \bot$\\
+\end{adjustwidth}
+$\Rightarrow xyz=0$, tj. $x=0\ \lor y=0\ \lor z=0$.\\
+$\cdots$\\
+$\Rightarrow (x,y,z)=(0,0,0)$. \qedsymbol
+\end{zad}
+\end{document}

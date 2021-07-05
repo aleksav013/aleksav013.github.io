@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=15mm,top=10mm,bottom=10mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\newcommand\tsd{\theoremstyle{definition}}
+\newcommand\tsr{\theoremstyle{remark}}
+\newcommand\D{\displaystyle}
+\setlength{\parindent}{0pt}
+
+\tsd\newtheorem{zad}{Zadatak}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+
+\title{\bf{Vezhbe iz fizike 2}}
+\author{\Large Aleksa Vuchkovic1, 3c}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+
+\textbf{\Large Vezhba 2. Redna i paralelna veza otpornika}\\
+%\textit{Odredjivanje elektromotorne sile i unutrashnjeg otpora izvora jednosmerne struje}\\
+\section{Redna veza}
+$I = 23\cdot 10^{-3}A$\\
+$\Delta I = 1\%I+3d=0.6\cdot  10^{-3}A$\\
+$(I\pm\Delta I) = (23.0\pm 0.6)\cdot 10^{-3}A$\\
+
+$U_1 = 2.23V$\\
+$\Delta U_1=0.5\%U_1+3d=0.05V$\\
+$(U_1\pm\Delta U_1) = (2.23\pm 0.05)V$\\
+
+$U_2 = 1.15V$\\
+$\Delta U_2 = 0.5\%U_2+3d=0.04V$\\
+$(U_2\pm\Delta U_2) = (1.15\pm 0.04)V$\\
+
+$U = 3.49V$\\
+$\Delta U = 0.5\%U+3d=0.05V$\\
+$(U\pm\Delta U) = (3.49\pm 0.05)V$\\
+
+$R_1 =\D\frac{U_1}{I} = 101\Omega$\\
+$\Delta R_1 = R_1\cdot\left(\D\frac{\Delta U_1}{U_1}+\D\frac{\Delta I}{I}\right)=5\Omega$\\
+$(R_1\pm\Delta R_1) = (101\pm 5)\Omega$\\
+
+$R_2 =\D\frac{U_2}{I} = 50\Omega$\\
+$\Delta R_2 = R_2\left(\D\frac{\Delta U_2}{U_2}+\D\frac{\Delta I}{I}\right) = 4\Omega$\\
+$(R_2\pm\Delta R_2) = (50 \pm 4)\Omega$\\
+
+$R_r = R_1 + R_2 = 101\Omega+50\Omega=151\Omega$\\
+$\Delta R_r = \Delta R_1 +\Delta R_2 = 5\Omega+3.1\Omega = 8.1\Omega \approx 9\Omega$\\
+$(R_r\pm\Delta R_r) = (151\pm 9)\Omega$\\
+
+\section{Paralelna veza}
+
+$I_1 = 82.1\cdot 10^{-3}A$\\
+$\Delta I_1 = 1\%I_1+3d = 1.2\cdot 10^{-3}A\approx 2\cdot 10^{-3}A$\\
+$(I_1\pm\Delta I_1) = (82\pm 2)\cdot 10^{-3}A$\\
+
+$I_2 = 43.1\cdot 10^{-3}A$\\
+$\Delta I_2 = 1\%I_2+3d = 0.8\cdot 10^{-3}A$\\
+$(I_2\pm\Delta I_2) = (43.1\pm 0.8)\cdot 10^{-3}A$\\
+
+$I = 124.8\cdot 10^{-3}A$\\
+$\Delta I = 1\%I+3d = 1.6\cdot 10^{-3}A$\\
+$(I\pm\Delta I) = (124.8\pm 1.6)\cdot 10^{-3}A$\\
+
+$U = 4.49V$\\
+$\Delta U = 0.5\%U+3d = 0.06V$\\
+$(U\pm\Delta U) = (4.49\pm 0.06)V$\\
+
+$R_1 =\D\frac{U}{I_1} = 54.7\Omega$\\
+$\Delta R_1 = R_1\cdot\left(\D\frac{\Delta U}{U}+\D\frac{\Delta I_1}{I_1}\right) = 1.6\Omega\approx 2\Omega$\\
+$(R_1\pm\Delta R_1) = (55\pm 2)\Omega$\\
+
+$R_2 =\D\frac{U_2}{I} = 104\Omega$\\
+$\Delta R_2 = R_2\left(\D\frac{\Delta U}{U}+\D\frac{\Delta I_2}{I_2}\right) = 4\Omega$\\
+$(R_2\pm\Delta R_2) = (104 \pm 4)\Omega$\\
+
+$R_p = \D\frac{U}{I} = 36\Omega$\\
+$\Delta R_p = R_p \left(\D\frac{\Delta U}{U}+\D\frac{\Delta I}{I}\right) = 1\Omega$\\
+$(R_p\pm\Delta R_p) = (36\pm 1)\Omega$\\
+
+\section{Direktna merenja}
+
+$R_1 = 51.2\Omega$\\
+$\Delta R_1 = 0.5\Omega$\\
+$(R_1\pm\Delta R_1) = (51.2\pm 0.5)\Omega$\\
+
+$R_1 = 101.4\Omega$\\
+$\Delta R_1 = 1.4\Omega\approx 2\Omega$\\
+$(R_1\pm\Delta R_1) = (101\pm 2)\Omega$\\
+
+$R_r = 151.7\Omega$\\
+$\Delta R_r = 1\%R_r+3d = 1.9\Omega\approx 2\Omega$\\
+$(R_r\pm\Delta R_r) = (152\pm 2)\Omega$\\
+
+$R_p = 34.3\Omega$\\
+$\Delta R_p = 1\%R_p+3d = 0.7\Omega$\\
+$(R_p\pm\Delta R_p) = (34.4\pm 0.7)\Omega$\\
+\end{document}

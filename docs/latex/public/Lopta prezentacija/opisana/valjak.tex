@@ -1,0 +1,37 @@
+\documentclass[12pt,border=3mm]{standalone}
+\usepackage{fouriernc}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc,backgrounds}
+\begin{document}
+\tdplotsetmaincoords{70}{110}
+\def\r{{2*sqrt(3)}}
+\def\d{-60}
+\begin{tikzpicture}
+[scale=1,tdplot_main_coords]
+\path
+coordinate (O) at (0,0,0)
+coordinate (I) at  (0,0,2)
+coordinate (A') at  (0,\r,4)
+coordinate (A) at  (0,\r,0);
+\coordinate (B) at ($(O) + (\d:{2*sqrt(3)} and \r)$);
+\coordinate (B') at ($(B)+(0,0,4)$);
+\coordinate (O') at ($(O)+(0,0,4)$);
+\draw[dashed] (A)--(A') (B) --(B') (O)--(O') (O)--(A) (I) --(A);
+\foreach \v/\position in {I/left,O/below,O'/above,A/below,B/below,A'/left,B'/left} {
+    \draw[draw =black, fill=black] (\v) circle (1.2pt) node [\position=0.2mm] {$\v$};
+}
+\begin{scope}[tdplot_screen_coords, on background layer]
+\pgfmathsetmacro{\R}{4}%
+%\pgfmathsetmacro{\r}{{2*sqrt(3)}}%
+\fill[ball color=cyan!10, opacity=1.0]  (I) circle (\R); % 3D lighting effect
+\end{scope}
+\tkzMarkRightAngle[size = 0.3](I,O,A);
+\draw [thick, fill opacity=0.4,fill=orange!80!blue] (B) arc (\d:90:\r);
+\draw [thick, dashed, fill opacity=0.4,fill=orange!80!blue] (A) arc (90:300:\r);
+\draw [thick, dashed, fill opacity=0.4,fill=green!80!blue] (B') arc (\d:90:\r);
+\draw [thick, dashed, fill opacity=0.4,fill=green!80!blue] (A') arc (90:300:\r);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\definecolor{wrwrwr}{rgb}{0.3803921568627451,0.3803921568627451,0.3803921568627451}
+\definecolor{sexdts}{rgb}{0.1803921568627451,0.49019607843137253,0.19607843137254902}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-4,
+xmax=4,
+ymin=-2,
+ymax=3,
+xtick={-4,-3,...,7},
+ytick={-3,-2,...,3},]
+\clip(-4.871979681189722,-3.02989218497708) rectangle (7.256182408526628,3.863016545943017);
+\draw[line width=2pt,color=sexdts,smooth,samples=100,domain=-4.871979681189722:4.256182408526628] plot(\x,{(5^((\x))+5^(-(\x))-abs(5^((\x))-5^(-(\x))))/2});
+\begin{scriptsize}
+\draw[color=sexdts] (.65,0.65) node {$f$};
+\draw [fill=wrwrwr] (0,1) circle (2.5pt);
+\draw[color=wrwrwr] (0.15344388366679437,1.2) node {$A$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

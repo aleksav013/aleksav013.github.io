@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[ a4paper,total={170mm,257mm},right=15mm,left=15mm,top=0mm,bottom=10mm]{geometry}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+\title{\textbf{\huge Continued Fractions}}
+\date{}
+\author{}
+\begin{document}
+\setlength{\columnsep}{1.2cm}
+\maketitle
+\begin{center}
+\vspace*{-1.5cm}
+ \large\textit{\textbf{Author:} Aleksa Vu\v ckovi\'c, second grade student, Mathematical Grammar School, Belgrade}\\
+    \textit{\textbf{Supervisor:} Danica Ze\v cevi\'c}\\
+    \normalsize\textit{Center for talented youth "Mihajlo Pupin", Dimitrija Tucovi\'ca 2, Pan\v cevo}
+\end{center}
+\begin{multicols}{2}
+ \noindent
+\section*{\underline{Introduction}}
+
+Simple continued fraction is expression with form
+\begin{equation}
+\label{eq1}
+    a_0+\frac{1}{a_1+\frac{1}{a_2+\frac{1}{a_3+\dots}}},\tag{$*$}
+\end{equation}
+where $a_1$, $a_2$,... are natural numbers and $a_0$ whole number.
+We often write expression \eqref{eq1} as [$a_0, a_1, a_2,...,a_n]$ for compactness. In this record, we do not \text necessarily imply that $ a_i $ are integers.
+We call expression $[a_0,a_1,...,a_k]$  $k$-th \textbf{covergence} for $[a_0,a_1,...,a_n]$, and expression $a'_k=[a_k,a_{k+1},...,a_n]$ \text {$k$-th} complete \text quotient $(n \geq k)$. These two terms will be very important for us to prove the properties of continued \text fractions and their convergences.
+\text Continued fractions have \text existed for hundreds of years. Every \text final record of
+the continued fraction corresponds to a \text rational number, while the infinite corresponds to \text irrational.
+Continued fractions are related to Euclid's algorithm, have their application in
+calendar, writing down the number $ \ pi $ and the number $ e $ in the form of fractions, and are used to find the solution of the Pell's equation($x^2-dy^2=1$).
+
+\section*{\underline{Objective}}
+
+The aim of this research paper is to prove the \text properties of continued fractions, to represent real numbers in the form of continued fractions, to find the best \text approximation of an irrational number to rational ones, or to approximate a fraction with large values of \text denominators and numerators to smaller \text numerical \text values in order for easier calculations and practical \text application with minimal errors.
+
+\section*{\underline{Materials and methods}}
+
+Methods of research are collecting \text literature, as well as their interpretation and \text resolution.
+The correlation between \text theoretical and practical considerations was sought
+\text application, the process of \text reaching the \text solution is presented in detail. The combined method of \text research was used and literature with a diverse application of continued fractions was studied in this scientific work. In addition, the development of a rational number into a continued fraction is shown graphically, for easier understanding.
+\noindent
+
+\section*{\underline{Results}}
+The subject of this paper are continued fractions, \text convergence of continued fractions, as well as their properties and applications. Below you will have the opportunity to see some of the many theorems and their consequences. A selection of the most important things on this topic has been made in the author's \text opinion which the reader will encounter in the forthcoming text.\\
+Continued fractions are not suitable for basic \text calculus operations. However, it is not difficult to perform \text operations $x\to\frac{1}{x}$ and $ x \to -x $ with
+them, by using \\equalities:
+\begin{align*}
+    &[a_0,a_1,...,a_n] \cdot [0,a_0,a_1,...,a_n]=0 &\text{for } a_0\geq 1,& \text{ and}\\
+    &[a_0,a_1,...,a_n] + [-1-a_0,1,a_1-1,a_2,...,a_n] &\text{for } a_1>1.&
+\end{align*}
+Continued fraction $[a_0, a_1, . . . , a_n]$ is equal to $\frac{p_n}{q_n}$, where arrays ($p_n$) and ($q_n$) meet the following requirements
+\begin{center}
+$\begin{aligned}\\[-10mm]
+    &p_{-1}=1,& &p_0=a_0, &p_k=a_kp_{k-1}+p_{k-2}&\\[-3mm]
+    &&&&&&\quad\text{for } 2\leq k\leq n.\\[-3mm]
+    &q_{-1}=1,& &q_0=1, &q_k=a_kq_{k-1}+q_{k-2}&
+\end{aligned}$
+\end{center}
+Apart from the above operations and the recursive \text connection between the convergence of continued \text fractions, it is important to mention:\\
+\textit{Theorem}, respectively, the next 2 identities\\[2mm]
+\begin{center}
+$\begin{aligned}\\[-13mm]
+    &p_nq_{n-1}-p_{n-1}q_n=(-1)^{n-1} \quad\text{ and}\\
+    &p_nq_{n-2}-p_{n-2}q_n=(-1)^na_n
+\end{aligned}$\\[1.5mm]
+\end{center}
+on which the following consequences are based:\\[3mm]
+(1) Convergents $\frac{p_n}{q_n}$ of simple continued fraction are irreducible: gcd$(p_n,q_n)=1$.\\[2mm]
+(2)
+$\displaystyle\frac{p_0}{q_0}<\frac{p_2}{q_2}<\frac{p_4}{q_4}\cdots<\frac{p_n}{q_n}<\cdots\frac{p_3}{q_3}<\frac{p_1}{q_1}.$\\[3mm]
+And at last, the identity that connects continued \text fraction and "reverse" counterpart\\[1.5mm]
+\text{If it is $[a_0,a_1,...,a_n] =\frac{p_n}{q_n}$, then $[a_n,a_{n-1},...,a_0]=\frac{p_n}{p_{n-1}}$.}
+
+\section*{\underline{Conclusion}}
+Although these fractions are no longer subject in school books, their use is still unusually large. Continued fractions appear in many different branches of mathematics: the theory of Diophantine approximations, \text algebraic number theory, coding theory, toric geometry, dynamical systems, ergodic theory, topology, etc. One of the mathematical explanations of this phenomenon is based on an interesting structure of the set of real numbers endowed with two operations: addition and inversion. This structure appeared for the ﬁrst time in the Euclidean algorithm, which was known several thousand years ago. That is the reason why \text continued \text fractions can be encountered far away from number \text theory.
+
+\section*{\underline{Literature}}
+
+[1] D. Djuki\'c \textit{Veri\v zni razlomci}, Belgrade, 2010/11. \url{https://imomath.com/srb/dodatne/veriznirazlomci_ddj.pdf}\\{}
+[2] S. Krushchev \textit{Orthogonal Polynomials and Continued Fractions}, Cambridge University Press, 2008.\\{}
+[3] W. Bosma, C. Kraaikamp \textit{Continued Fractions} \url{https://www.math.ru.nl/~bosma/Students/CF.pdf}
+
+ \end{multicols}
+  \pagebreak
+
+\end{document}

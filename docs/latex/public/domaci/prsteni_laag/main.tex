@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=15mm,top=10mm,right=15mm,bottom=8mm]{geometry}
+\usepackage[OT2]{fontenc}
+\pagenumbering{gobble}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{cancel}
+%\usepackage{multicol}
+%\newcommand\tsd{\theoremstyle{definition}}
+%\newcommand\tsr{\theoremstyle{remark}}
+\setlength{\parindent}{0pt}
+
+%\tsd\newtheorem*{zad}{Zadatak}
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+\newcommand*{\as}{\stackrel{\text{$AS$}}{=}}
+\newcommand{\bm}{\begin{bmatrix}}
+\newcommand{\enm}{\end{bmatrix}}
+\newcommand{\ov}{\overline}
+
+\title{\bf{Domac1i zadatak iz prstena}}
+\author{\Large Aleksa Vuchkovic1, 3c}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+\textbf{Zadatak 9.} Neka je $\mathbb{H}=\left\{\bm a&b\\-\ov{b}&\ov{a} \enm\;\vline a,b\in\mathbb{C}\right\}$ i sabiranje i mnozhenje uobichajene operacije nad matricama. Dokazati da ova struktura jeste prsten, a nije polje. Ukoliko je $A\cancel{=}0$, dokazati da je $A^{-1}=\bm \frac{\ov{a}}{|a|^2+|b|^2}&\frac{-b}{|a|^2+|b|^2}\\\frac{\ov{b}}{|a|^2+|b|^2}&\frac{a}{|a|^2+|b|^2}\enm$ inverzna matrica matrici $A$ u odnosu na mnozhenje. Elementi iz $\mathbb{H}$ se zovu \textit{kvaternoioni}.\\
+
+\textbf{\eng{I}} $(\mathbb{H},+)$ je Abelova grupa:\\
+\textbf{1)} Zatvorenost\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm + \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm = \bm (a_1+a_2)&(b_1+b_2)\\-(\ov{b_1}+\ov{b_2})&(\ov{a_1}+\ov{a_2})\enm=\bm (a_1+a_2)&(b_1+b_2)\\-\ov{(b_1+b_2)}&\ov{(a_1+a_2)}\enm\in\mathbb{H}\cdot$\\
+\textbf{2)} Asocijativnost\\
+\small$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm + \left(\bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm + \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm\right) = \bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm + \bm (a_2+a_3)&(b_2+b_3)\\-(\ov{b_2}+\ov{b_3})&(\ov{a_2}+\ov{a_3})\enm = \bm (a_1+a_2+a_3)&(b_1+b_2+b_3)\\-(\ov{b_1}+\ov{b_2}+\ov{b_3})&(\ov{a_1}+\ov{a_2}+\ov{a_3})\enm$,\\
+\small$\left(\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm + \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm\right) + \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm = \bm (a_1+a_2)&(b_1+b_2)\\-(\ov{b_1}+\ov{b_2})&(\ov{a_1}+\ov{a_2})\enm + \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm = \bm (a_1+a_2+a_3)&(b_1+b_2+b_3)\\-(\ov{b_1}+\ov{b_2}+\ov{b_3})&(\ov{a_1}+\ov{a_2}+\ov{a_3})\enm\cdot$\\
+\large \textbf{3)} Neutral za sabiranje\\
+$e=\bm 0&0\\0&0\enm\cdot$\\
+\textbf{4)} Inverz\\
+za $A=\bm a&b\\-\ov{b}&\ov{a}\enm$ inverz je $A^{-1}=\bm (-a)&(-b)\\-\ov{(-b)}&\ov{(-a)}\enm$\\
+$A+A^{-1}=A^{-1}+A=0$\\
+\textbf{5)} Komutativnost\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm + \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm = \bm (a_1+a_2)&(b_1+b_2)\\-(\ov{b_1}+\ov{b_2})&(\ov{a_1}+\ov{a_2})\enm=\bm (a_2+a_1)&(b_2+b_1)\\-(\ov{b_2}+\ov{b_1})&(\ov{a_2}+\ov{a_1})\enm = \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm+\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm $\\
+
+\textbf{\eng{II}} Distributivnost:\\\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \left(\bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm + \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm\right)=\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm +\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm$\\
+1)\\ 
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \bm (a_2+a_3)&(b_2+b_3)\\-(\ov{b_2}+\ov{b_3})&(\ov{a_2}+\ov{a_3})\enm = \bm  a_1a_2+a_1a_3-b_1\ov{b_2}-b_1\ov{b_3}&a_1b_2+a_1b_3+b_1\ov{a_2}+b_1\ov{a_3}\\ -\ov{b_1}a_2-\ov{b_1}a_3-\ov{a_1}\ov{b_2}-\ov{a_1}\ov{b_3}&-\ov{b_1}b_2-\ov{b_1}b_3+\ov{a_1}\ov{a_2}+\ov{a_1}\ov{a_3} \enm$,\\
+2)\\
+\small $\bm a_1a_2-b_1\ov{b_2}&a_1b_2+b_1\ov{a_2}\\ -\ov{b_1}a_2-\ov{a_1}\ov{b_2}&-\ov{b_1}b_2+\ov{a_1}\ov{a_2} \enm + \bm a_1a_3-b_1\ov{b_3}&a_1b_3+b_1\ov{a_3}\\ -\ov{b_1}a_3-\ov{a_1}\ov{b_3}&-\ov{b_1}b_3+\ov{a_1}\ov{a_3} \enm = \bm  a_1a_2-b_1\ov{b_2}+a_1a_3-b_1\ov{b_3}&a_1b_2+b_1\ov{a_2}+a_1b_3+b_1\ov{a_3}\\ -\ov{b_1}a_2-\ov{a_1}b_2-\ov{b_1}a_3-\ov{a_1}\ov{b_3}&-\ov{b_1}\ov{b_2}+\ov{a_1}\ov{a_2}-\ov{b_1}b_3+\ov{a_1}\ov{a_3} \enm\cdot$\\
+
+\large\textbf{\eng{III}} $(\mathbb{H},\cdot)$, Vazhi zatvorenost i asocijativnost, ali ovo nije Abelova grupa:\\
+
+\textbf{1)} Zatvorenost\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm = \bm a_1a_2-b_1\ov{b_2}&a_1b_2+b_1\ov{a_2}\\ -\ov{b_1}a_2-\ov{a_1}\ov{b_2}&-\ov{b_1}b_2+\ov{a_1}\ov{a_2} \enm= \bm (a_1a_2-b_1\ov{b_2})&(a_1b_2+b_1\ov{a_2})\\ -\ov{(b_1\ov{a_2}+a_1b_2)}&\ov{(-b_1\ov{b_2}+a_1a_2)} \enm\in\mathbb{H}\cdot$\\
+\textbf{2)} Asocijativnost\\
+\small$\left(\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot\bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm\right ) \cdot \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm=\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot\left(\bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm \cdot \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm\right)$\\
+$\bm a_1a_2-b_1\ov{b_2}&a_1b_2+b_1\ov{a_2}\\-\ov{b_1}a_2-\ov{a_1}\ov{b_2}&-\ov{b_1}b_2+\ov{a_1}\ov{a_2} \enm\cdot \bm a_3&b_3\\-\ov{b_3}&\ov{a_3}\enm = \bm a_1a_2a_3-b_1\ov{b_2}a_3-a_1b_2\ov{b_3}-b_1\ov{a_2}\ov{b_3}&a_1a_2b_3-b_1\ov{b_2}b_3+a_1b_2\ov{a_3}+b_1\ov{a_2}\ov{a_3}\\-\ov{b_1}a_2a_3-\ov{a_1}\ov{b_2}a_3+\ov{b_1}b_2\ov{b_3}-\ov{a_1}\ov{a_2}\ov{b_3}&-\ov{b_1}a_2b_3-\ov{a_1}\ov{b_2}b_3-\ov{b_1}b_2\ov{a_3}+\ov{a_1}\ov{a_2}\ov{a_3} \enm$\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm\cdot \bm a_2a_3-b_2\ov{b_3}&a_2b_3+b_2\ov{a_3}\\ -\ov{b_2}a_3-\ov{a_2}\ov{b_3}&-\ov{b_2}b_3+\ov{a_2}\ov{a_3} \enm = \bm a_1a_2a_3 - a_1b_2\ov{b_3}-b_1\ov{b_2}a_3-b_1\ov{a_2}\ov{b_3}&a_1a_2b_3+a_1b_2\ov{a_3}-b_1\ov{b_2}b_3+b_1\ov{a_2}\ov{a_3}\\-\ov{b_1}a_2a_3+\ov{b_1}b_2\ov{b_3}-\ov{a_1}\ov{b_2}a_3-\ov{a_1}\ov{a_2}\ov{b_3} &-\ov{b_1}a_2b_3-\ov{b_1}b_2\ov{a_3}-\ov{a_1}\ov{b_2}b_3+\ov{a_1}\ov{a_2}\ov{a_3} \enm$\\
+\large \textbf{3)} Neutral za mnozhenje\\
+$e=\bm 1&0\\0&1\enm$\\
+$A\cdot e=e\cdot A=A$\\
+\textbf{4)} Inverz\\
+za matricu $A=\bm a&b\\-\ov{b}&\ov{a}\enm$ inverz za mnozhenje je $A^{-1}=\bm \frac{\ov{a}}{|a|^2+|b|^2}&\frac{-b}{|a|^2+|b|^2}\\\frac{\ov{b}}{|a|^2+|b|^2}&\frac{a}{|a|^2+|b|^2}\enm$\\
+$A\cdot A^{-1}=A^{-1}\cdot A=\bm 1&0\\0&1\enm$\\
+\textit{Dokaz}:\\
+$A\cdot A^{-1}=\bm \frac{a\ov{a}}{|a|^2+|b|^2}+\frac{b\ov{b}}{|a|^2+|b|^2}&-\frac{ab}{|a|^2+|b|^2}+\frac{ab}{|a|^2+|b|^2}\\ -\frac{\ov{b}\ov{a}}{|a|^2+|b|^2}+\frac{\ov{a}\ov{b}}{|a|^2+|b|^2}&\frac{b\ov{b}}{|a|^2+|b|^2}+\frac{a\ov{a}}{|a|^2+|b|^2}\enm=\bm\frac{|a|^2+|b|^2}{|a|^2+|b|^2}&\frac{ab-ab}{|a|^2+|b|^2}\\\frac{-\ov{b}\ov{a}+\ov{a}\ov{b}}{|a|^2+|b|^2}&\frac{b\ov{b}+a\ov{a}}{|a|^2+|b|^2}\enm = \bm 1&0\\0&1\enm$\\
+$A^{-1}\cdot A=\bm \frac{a\ov{a}}{|a|^2+|b|^2}+\frac{b\ov{b}}{|a|^2+|b|^2}&-\frac{ab}{|a|^2+|b|^2}+\frac{ab}{|a|^2+|b|^2}\\ -\frac{\ov{b}\ov{a}}{|a|^2+|b|^2}+\frac{\ov{a}\ov{b}}{|a|^2+|b|^2}&\frac{b\ov{b}}{|a|^2+|b|^2}+\frac{a\ov{a}}{|a|^2+|b|^2}\enm=\bm\frac{|a|^2+|b|^2}{|a|^2+|b|^2}&\frac{ab-ab}{|a|^2+|b|^2}\\\frac{-\ov{b}\ov{a}+\ov{a}\ov{b}}{|a|^2+|b|^2}&\frac{b\ov{b}+a\ov{a}}{|a|^2+|b|^2}\enm = \bm 1&0\\0&1\enm$\\
+
+\textbf{5)} Ne vazhi komutativnost\\
+$\bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm \cdot \bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm = \bm a_1a_2-b_1\ov{b_2}&a_1b_2+b_1\ov{a_2}\\ -\ov{b_1}a_2-\ov{a_1}\ov{b_2}&-\ov{b_1}b_2+\ov{a_1}\ov{a_2} \enm$\\
+$\bm a_2&b_2\\-\ov{b_2}&\ov{a_2}\enm \cdot \bm a_1&b_1\\-\ov{b_1}&\ov{a_1}\enm = \bm a_2a_1-b_2\ov{b_1}&a_2b_1+b_2\ov{a_1}\\ -\ov{b_2}a_1-\ov{a_2}\ov{b_1}&-\ov{b_2}b_1+\ov{a_2}\ov{a_1} \enm$\\\\
+
+Chime je dokaz zavrshen.
+\end{document}

@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+\usepackage[ a4paper,total={170mm,257mm},left=20mm,top=25mm]{geometry}
+\usepackage[OT2]{fontenc}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{newlfont}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage{standalone}
+\usepackage{hyperref}
+
+\pagenumbering{gobble}
+\setlength{\droptitle}{-5em}
+\setlength\intextsep{0pt}
+\renewcommand\refname{Literatura}
+
+\newcommand\texteng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\textsrb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+
+\def\dj{d\kern-0.4em\char"16\kern-0.1em}
+\def\Dj{\mbox{\raise0.3ex\hbox{-}\kern-0.4em D}}
+\newcommand{\D}{\displaystyle}
+\def \zn{,\kern-0.09em,}
+\date{}
+\newcommand\tsd{\theoremstyle{definition}}
+\newcommand\tsr{\theoremstyle{remark}}
+
+\tsd\newtheorem{df}{Defincija}
+\tsr\newtheorem{pr}{Primer}
+\tsr\newtheorem{te}{Teorema}
+\tsr\newtheorem*{dok}{Dokaz}
+\tsr\newtheorem*{pos}{Posledica}
+
+\righthyphenmin 2
+\parindent 0ex
+
+\title{\textbf{\LARGE{VERIZHNI RAZLOMCI\\ \texteng{CONTINUED FRACTIONS}}}}
+\author{
+\normalsize\textit{\textbf{Autor:}}\\ \textbf{ALEKSA VUCHKOVIC1},
+\normalsize\text{\texteng{II}} razred, Matematichka gimnazija, Beograd; Regionalni\\ centar za talente \normalsize\text\zn Mihajlo Pupin", Panchevo
+\\[0.25cm]
+\and
+\normalsize
+\textit{\textbf{Mentor:}}\\ \normalsize\textbf{DANICA ZECHEVIC1},
+Regionalni centar za talente \zn Mihajlo Pupin", Panchevo
+}
+
+
+\begin{document}
+\maketitle
+
+\vspace{-0.5cm}
+\begin{center}
+\Large\textbf{Rezime}
+\end{center}
+\begin{flushleft}
+\normalsize
+Predmet obrade ovog nauchnoistrazhivachkog rada su verizhni razlomci, konvergente verizhnih razlomaka, kao i njihova svojstva i primene. Metode istrazhivanja su prikupljanje literature, a potom i njihovo tumachenje i reshavanje. Prikazan je postupak odredjivanja konvergenti, kao i nachin primene svojstva konvergenata prilikom reshavanja linearnih diofantskih jednachina. Opisana je i uloga verizhnih razlomaka u zadacima aproksimacije realnih brojeva racionalnim, koja je jedna od najochiglednijih i najkorisnijih. Osim prethodno pomenutih stvari, nachinjen je izbor najbitnijih stvari na ovu temu po autorovom mishljenju sa kojima c1e se chitalac susreti u predstojec1em tekstu.
+\end{flushleft}
+\textbf{Kljuchne rechi:} verizhni razlomci, konvergente
+
+\begin{center}
+\Large\textbf{\texteng{Summary}}
+\end{center}
+\begin{flushleft}
+\normalsize
+\texteng{The subject of this scientific research work are continued fractions, convergents of continued fractions, as well as their characteristics and applications. Methods of research are collecting literature, as well as their interpretation and resolution. The convergence determination procedure was shown in addition to }
+\end{flushleft}
+\text{\texteng{\textbf{Key words:} continued fractions, convergents
+}}
+
+
+\newpage
+\begin{center}
+    \textbf{\Large{UVOD}}
+\end{center}
+\begin{df}
+Prost verizhni razlomak je izraz oblika
+\begin{equation}
+\label{eq1}
+    a_0+\frac{1}{a_1+\frac{1}{a_2+\frac{1}{a_3+\dots}}},\tag{$*$}
+\end{equation}
+gde su $a_1$, $a_2$,... prirodni brojevi i $a_0$ ceo broj.\\
+
+Izraz \eqref{eq1} chesto pishemo kao [$a_0, a_1, a_2,...,a_n]$ radi kompaktnosti. U ovom zapisu ne \\\text podrazumevamo obavezno da su $a_i$ celi brojevi.\\
+Postoje i opshti verizhni razlomci u kojima $a_i$ nisu obavezno celi i brojioci razlomaka nisu obavezno jednaki 1:
+\end{df}
+\begin{df}
+Opshti verizhni razlomak je izraz oblika $$ a_0+\frac{b_1}{a_1+\frac{b_2}{a_2+\frac{b_3}{a_3+\dots}}}.$$
+\end{df}
+Osim ako drugachije naglasimo, pod pojmom verizhnog razlomka podrazumevac1emo prost verizhni razlomak. Verizhni razlomci su jedan od nachina predstavljanja racionalnih i, uopshte, realnih brojeva, koji je posebno znachajan u teoriji brojeva.\\
+
+\begin{pr}
+Broj $\frac{30}{13}$ ima tachno dva prestavljanja u obliku prostog verizhnog razlomka.\\Poshto je $0\leq\frac{30}{13}-a_0\leq 1$, mora biti $a_0=2$. Dalje $a_1+\frac{1}{a_2+\dots}=\frac{1}{\frac{30}{13}-a_0}=\frac{13}{4}$, pa $a_1$ mora biti jednako 3; zbog $a_2+\frac{1}{a_3+\dots}=\frac{1}{\frac{13}{4}-a_1}=4$ je $a_2=3$.U zavrshnom koraku, medjutim, imamo dve moguc1nosti: mozhe biti $a_2=4$ pri chemu se verizhni razlomak tu zavrxava, a mozhe biti i $a_2=3$ i $a_3=1$ kao poslednji chlan. Dobijamo
+$$\frac{30}{13}=2+\frac{1}{3+\frac{1}{4}}=2+\frac{1}{3+\frac{1}{3+\frac{1}{1}}}$$
+tj. $\frac{30}{13}=[2,3,4]=[2,3,3,1]$.
+\end{pr}
+U prethodnom primeru predstavljanje verizhnim razlomkom je jedinstveno ako zahtevamo da se razvoj ne zavrshava jedinicom - u tom sluchaju drugo predstavljanje otpada.\\
+Ovaj postupak se mozhe ilustrovati na sledec1i nachin:
+\\[1mm]
+\begin{figure}[h]
+\centering\includestandalone[scale=0.5]{tikz1}
+\\
+Slika 1. - Prikaz verizhnog razlomka
+  \label{fig:tikz1}
+\end{figure}
+
+\newpage
+\begin{center}
+    \textbf{\Large{METODIKA RADA}}
+\end{center}
+\textbf{\large 1. Razvoj racionalnog broja u verizhni razlomak}
+\begin{te}
+Svaki racionalan broj se mozhe na taqno jedan nachin razviti u konachan verizhni razlomak $[a_0, a_1, . . . , a_n]$ u kome je $a_n\ne 1$.
+\end{te}
+Ako dopustimo da se razvoj zavrshi jedinicom, postoji josh tachno jedan nachin, i to \text {$[a_0, a_1, . . . , a_n-1, 1]$.}
+\begin{dok}
+Oznachimo racionalni broj sa $\frac{p}{q}$. Koristimo indukciju po $q$. Tvrdjenje je trivijalno za $q=1$. Pretpostavimo da je $q>1$ i da je tvrdjenje tachno za sve racionalne brojeve sa imeniocima manjim od $q$. Mora biti $a_0=\left[\frac{p}{q}\right ]$, pa imamo $\frac{p}{q}=a_0+\frac{1}{(\frac{q}{p-a_0 q})}$, pri chemu se po indukcijskoj pretpostavci razlomak $\frac{q}{p-a_0 q}\leq 1$ mozhe razviti u verizhni razlomak u tachno jedan, odnosno dva nachina, shto je kraj dokaza.
+\end{dok}
+Verizhni razlomci nisu pogodni za osnovne rachunske operacije. Ipak, nije teshko izvesti operacije $x \to 1/x$ i $x \to -x$ pomoc1u njih, korish{}c1enjem jednakosti:
+\begin{align*}
+    &[a_0,a_1,...,a_n] \cdot [0,a_0,a_1,...,a_n]=0 &\text{za } a_0\geq 1,& \text{ i}\\
+    &[a_0,a_1,...,a_n] + [-1-a_0,1,a_1-1,a_2,...,a_n] &\text{za } a_1>1.&
+\end{align*}
+Obe jednakosti se jednostavno dokazuju. Na primer, ako je $x=[a_0,a_1,...,a_n]$ i $a_1>1$ tada je  $[-1-a_0,1,a_1-1,a_2,...,a_n]=-1-a_0+\frac{1}{1+\frac{1}{(x-a_0)^{-1}-1}}=-x$
+\begin{pr}
+Iz $\frac{17}{14}=[1,4,1,2]$ dobijamo $\frac{14}{17}=[0,1,4,1,2]$, $-\frac{17}{14}=[-2,1,3,1,2]$ i $-\frac{14}{17}=[-1,5,1,2]$.
+\end{pr}
+Kako odrediti chemu je jednako $[a_0,a_1,...,a_n]$? Na primer, za $n=$0, 1, 2 lako se dobija:\\[-3mm]
+\begin{center}
+$\D[a_0]=\frac{a_0}{1},\quad \D[a_0,a_1]=\frac{a_0a_1+1}{a_1},\quad\D[a_0,a_1,a_2]=\frac{a_0a_1a_2+a_0+a_2}{a_1a_2+1},$\\
+\end{center}
+ali za vec1e $n$ nam je potreban praktichniji nachin.
+\begin{df}
+Izraz $[a_0,a_1,...,a_k]$ zovemo $k$-tim \textbf{konvergentom} za $[a_0,a_1,...,a_n]$, a izraz \\$a'_k=[a_k,a_{k+1},...,a_n]$ $k$-tim kompletnim kolichnikom $(n \geq k)$.
+\end{df}
+Jasno je da je $x =[a_0,...,a_n]=[a_0,..., a_{k-1},[a_k,...,a_n]]=[a_0,...,a_{k-1},a'_k]$.
+\begin{te}
+Verizhni razlomak $[a0, a1, . . . , an]$ je jednak $\frac{p_n}{q_n}$, gde nizovi ($pn$) i ($qn$) zadovoljavaju 
+\begin{center}
+$\begin{aligned}
+    &p_{-1}=1,& &p_0=a_0, &p_k=a_kp_{k-1}+p_{k-2}&\\[-3mm]
+    &&&&&&\quad\text{za } 2\leq k\leq n.\\[-3mm]
+    &q_{-1}=1,& &q_0=1, &q_k=a_kq_{k-1}+q_{k-2}&
+\end{aligned}$
+\end{center}
+\end{te}
+
+\begin{dok}
+Tvrdjenje je tachno za $n \leq 1$. Neka je $n \geq 2$. Koristimo indukciju po $n$. Kako je \\$\frac{p_n}{q_n}=[a_0,...,a_n]= [a_0,...,a_{n-2},a_{n-1}+\frac{1}{a_n}]$, po indukcijskoj pretpostavci za $n-1$ imamo $$\frac{p_n}{q_n}=\frac{(a_{n-1}+\frac{1}{a_n})p_{n-2}+p_{n-3}}{(a_{n-1}+\frac{1}{a_n})q_{n-2}+p_{n-3}}=\frac{(a_{n-1}+\frac{1}{a_n})p_{n-2}+(p_{n-1}-a_{n-1}p_{n-2})}{(a_{n-1}+\frac{1}{a_n})q_{n-2}+(q_{n-1}-a_{n-1}q_{n-2})}=\frac{\frac{1}{a_n}p_{n-2}+p_{n-1}}{\frac{1}{a_n}q_{n-2}+q_{n-1}}$$
+shto daje tvrdjenje za $n$.
+\end{dok}
+
+\begin{pos}
+    $x=\D\frac{a'_kp_{k-1}+p_{k-2}}{a'_kq_{k-1}+q_{k-2}}$ za $2\leq k\leq n$.
+\end{pos}
+Sledec1i identitet daje vezu izmedju verizhnog razlomka i “obrnutog” parnjaka.
+\begin{te}
+Ako je $[a_0,a_1,...,a_n] =\frac{p_n}{q_n}$, onda je $[a_n,a_{n-1},...,a_0]=\frac{p_n}{p_{n-1}}$.
+\end{te}
+\begin{dok}
+Za $n=0$ tvrdjenje je trivijalno. Koristimo indukciju po $n$. Pretpostavimo da vazhi za  $n-1$, dakle $[a_{n-1},a_{n-2},...,a_0]=\frac{p_{n-1}}{q_{n-1}}$. Tada je $$[a_n,a_{n-1},...,a_0]=a_n+\frac{1}{[a_{n-1},...,a_0]}=a_n+\frac{p_{n-2}}{p_{n-1}}=\frac{p_n}{p_{n-1}}$$
+po prethodnoj teoremi.
+\end{dok}
+\newpage
+Teorema 2 daje $p_nq_{n-1}-p_{n-1}q_n=(a_np_{n-1}+p_{n-2})q_{n-1}-p_{n-1}(a_nq_{n-1}+q_{n-2})=\text -(p_{n-1}q_{n-2}-p_{n-2}q_{n-1})$. Takodje imamo $p_nq_{n-2}-p_n-2q_n = (a_np_{n-1}+p_{n-2})q_{n-2}-p_{n-2}(a_nq_{n-1}+q_{n-2})=\\ a_n(p_{n-1}q_{n-2}-p_n-2q_{n-1})$.  Ponavljanjem postupka za $n-1,...,1$ dobijamo
+\begin{te}
+$p_nq_{n-1}-p_{n-1}q_n=(-1)^{n-1}$ i $p_nq_{n-2}-p_n-2q_n=(-1)^na_n$. Ekvivalentno, $$\frac{p_n}{q_n}-\frac{p_{n-1}}{q_{n-1}}=\frac{(-1)^{n-1}}{q_nq_{n-1}}\quad\text{ i }\quad\frac{p_n}{q_n}-\frac{p_{n-2}}{q_{n-2}}=\frac{(-1)^{n}a_n}{q_nq_{n-2}}$$.
+\end{te}
+\begin{pos}
+Konvergenti $\frac{p_n}{q_n}$ prostog verizhnog razlomka su neskrativi: nzd$(p_n,q_n)=1$.
+\end{pos}
+\begin{pos}
+$\D\frac{p_0}{q_0}<\frac{p_2}{q_2}<\frac{p_4}{q_4}\cdots<\frac{p_n}{q_n}<\cdots\frac{p_3}{q_3}<\frac{p_1}{q_1}.$
+\end{pos}
+
+\begin{pr}
+Konvergenti razlomka $\frac{116}{41}=[2,1,4,1,6]=\frac{p_4}{q_4}$ su $$\frac{p_3}{q_3}=[2,1,4,1]=\frac{17}{6}, \quad
+\frac{p_2}{q_2}=[2,1,4]=\frac{14}{5}, \quad 
+\frac{p_1}{q_1}=[2,1]=\frac{3}{1}, \quad
+\frac{p_0}{q_0}=[2]=\frac{2}{1}$$
+i pri tom je $\frac{2}{1}<\frac{14}{5}<\frac{116}{41}<\frac{17}{6}<\frac{3}{1}$.\\[2mm]
+Nizovi $(p_i)^4_{i=0}=(2,3,14,17,116)$ i $(q_i)^4_{i=0}=(1,1,5,6,41)$ zadovoljavaju
+\begin{center}
+$\begin{aligned}
+    &p_4=a_4p_3+p_2,&\quad &p_3 = a_3p_2 + p_1,&\quad &p_2 = a_2p_1 + p_0 &\\[-3mm]
+    &&&&&&\text{ i }\\[-3mm]
+    &q_4 =a_4q_3 + q_2,&\quad &q_3 = a_3q_2 + q_1,&\quad &q_2 = a_2q_1 + q_0.&
+\end{aligned}$
+\end{center}
+Takodje je $p_4q_3 - p_3q_4=116\cdot 6- 17\cdot 41=-1$, $p_3q_2 - p_2q_3 =17\cdot 5-14\cdot 6=1$ i $[6,1,4,1,2]=\frac{116}{17}=\frac{p_4}{p_3}$.
+\end{pr}
+Iz teoreme 4 sledi da je $$x=[a_0,a_1,...,a_n]=a_0+\frac{1}{q_1q_0}-\frac{1}{q_1q_2}+\cdots+\frac{(-1)^{n-1}}{q_{n-1}q_n}$$
+Takodje imamo $\left| x-\frac{p_k}{q_k}\right|=\frac{1}{q_kq'_{k+1}}$ shto nam zajedno sa $q'_{k+1}\geq q_{k+1}>q_k$ daje
+\begin{te}
+$\left| x-\frac{p_k}{q_k}\right|\leq \frac{1}{q_kq_{k+1}}<\frac{1}{q_k^2}$
+\end{te}
+Teorema 4 nam omoguc1ava da opishemo parove prirodnih brojeva $x,y$ za koje je $ax-by = \pm 1$, gde su $a$ i $b$ dati prirodni brojevi. Zaista, ako je $\frac{a}{b}=[a_0,. ..,a_{k-1},a_k]$ i $\frac{y}{x}=[a_0,...,a_{k-1}]$, onda je $ax-by=(-1)^k$. Ovo je zapravo samo druchaqiji zapis Euklidovog algoritma.\\
+Primetimo da na osnovu teoreme 1 postoje taqno dva razvoja $\frac{a}{b}$ u verizhni razlomak, i njihove duzhine se razlikuju za 1. Tako mozhemo po zhelji podesiti parnost broja $k$.
+\begin{te}
+Ako su $a, b, c, d$ prirodni brojevi sa $ad - bc = \pm 1$ i $b > d$, i ako je $$\frac{a}{b}=[a_0,a_1,...,a_n]=[a_0,a_1,...,a_n-1,1]$$
+\end{te}
+
+\newpage
+\begin{thebibliography}{}
+
+\bibitem{ddj} D. Djukic1 \textit{Verizhni razlomci}, Beograd, 2010/11. \\\texteng{\url{https://imomath.com/srb/dodatne/veriznirazlomci_ddj.pdf}}
+\bibitem{skru} S. Krushchev \textit{Orthogonal Polynomials and Continued Fractions}, Cambridge University Press, 2008.\\ \url{https://www.maths.ed.ac.uk/~v1ranick/papers/khrushchev.pdf}
+\bibitem{okarp} \url{https://www.academia.edu/15076616/Geometry_of_Continued_Fractions}
+%\bibitem{lol} \url{https://www.math.ru.nl/~bosma/Students/CF.pdf}
+\end{thebibliography}{}
+\end{document}

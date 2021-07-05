@@ -1,0 +1,63 @@
+\documentclass{beamer}
+\mode<presentation>
+\usetheme{Warsaw}
+
+\definecolor{mygreen}{rgb}{.125,.5,.25}
+\usecolortheme[named=mygreen]{structure}
+
+\definecolor{lightgr}{rgb}{0.7 0.7 0.7}
+\makeatletter
+\addtobeamertemplate{footline}{%
+  \color{lightgr}% to color the progressbar
+  \hspace*{-\beamer@leftmargin}%
+  \rule{\beamer@leftmargin}{2pt}%
+  \rlap{\rule{\dimexpr
+      \beamer@startpageofframe\dimexpr
+      \beamer@rightmargin+\textwidth\relax/\beamer@endpageofdocument}{1.5pt}}
+  % next 'empty' line is mandatory!
+
+  \vspace{0\baselineskip}
+  {}
+}
+
+\usepackage[OT2]{fontenc}
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+
+\def\zn{,\kern-0.09em,}
+\setlength\intextsep{0pt}
+
+\newcommand\eng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand\srb{\fontencoding{OT2}\fontfamily{\rmdefault}\selectfont}
+
+\title{\textbf{Naslov}}
+\author{Aleksa Vuchkovic1 3c}
+\institute{Matematichka gimnazija, Beograd}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Sadrzhaj}
+\tableofcontents
+\end{frame}
+
+\section{Uvod}
+\subsection{Lopta1}
+\subsection{Lopta2}
+\begin{frame}{Uvod i dalje}
+\begin{block}{Lmao ovo je blok}
+Lopta je geometrijsko telo ogranicheno sferom. Chine je sve tachke koje su manje ili jednako udaljene $r$ od centra.
+\end{block}
+\onslide <2-3>
+Lopta\\
+\onslide <3>
+\Large$P=4r^2\pi$\\
+\Large$V=\frac{4}{3}r^3\pi$
+\end{frame}
+
+\section{}
+\begin{frame}
+\centering\LARGE HVALA NA PAZHNJI!
+\end{frame}
+\end{document}
