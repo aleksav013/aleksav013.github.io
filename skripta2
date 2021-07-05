@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -la $1 | sed '1d'|  awk '{print $5"    ["$9"]("$9")"}'
