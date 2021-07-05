@@ -1,2 +1,0 @@
-find src/latex/public -name "index.md" -delete
-./indexer "src/latex/public"

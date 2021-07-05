@@ -5,7 +5,7 @@ curr="."
 dir() {
     if [ -f "index.html" ]
     then
-	echo "Postoji index.html"
+	printf "Postoji index.html"
 	exit
     fi
 
@@ -13,18 +13,18 @@ dir() {
 
     if [ -f "$file" ]
     then
-	echo "Postoji $file"
+	printf "Postoji $file\n"
     else
-	echo "Index of $curr" >> $file 
+	printf "Index of $curr\n\n" >> $file 
 	if [ ! "$curr" = "." ]
 	then
-	    echo "0 [.](.)" >> $file
-	    echo "0 [..](..)" >> $file
+	    printf "0 [.](.)\n\n" >> $file
+	    printf "0 [..](..)\n\n" >> $file
 	fi
 
 	for i in *
 	do
-	    echo "$(du -hd0 "$i" | cut -f1) [$i]($i)" >> "$file"
+	    printf "$(du -hd0 "$i" | cut -f1) [$i]($i)\n\n" >> "$file"
 	done
     fi
 }
