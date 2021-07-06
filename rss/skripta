@@ -1,1 +1,0 @@
-date -d @$(stat -c %Y $1) '+%a, %d %b %Y %H:%M:%S %z'
