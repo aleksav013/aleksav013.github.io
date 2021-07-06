@@ -17,7 +17,7 @@ dir() {
     else
 	printf "# Index of $curr\n\n" >> $file
 	printf "File | Date | Size\n" >> $file
-	printf -- "--- | --- | ---\n" >> $file
+	printf -- ":--- | --- | ---\n" >> $file
 	if [ ! "$curr" = "." ]
 	then
 	    printf "[.](.) | |\n" >> $file
@@ -30,9 +30,9 @@ dir() {
 	    then
 		if [ -d "$i" ]
 		then
-		    printf "[**\`$i\`**]($i)" >> $file
+		    printf "[**<span>$i</span>**]($i)" >> $file
 		else
-		    printf "[\`$i\`]($i)" >> $file
+		    printf "[<span>$i</span>]($i)" >> $file
 		fi
 		printf " | $(date -d @$(stat -c %Y "$i") '+%a, %d %b %Y %H:%M:%S %z') | $(du -hd0 "$i" | cut -f1)\n" >> "$file"
 	    fi
