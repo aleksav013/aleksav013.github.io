@@ -1,14 +1,9 @@
-Index of ./domaci/Domaci iz analize
+# Index of ./domaci/Domaci iz analize
 
-0 [.](.)
-
-0 [..](..)
-
-28K [1zad](1zad)
-
-4.0K [index.md](index.md)
-
-156K [main.pdf](main.pdf)
-
-8.0K [main.tex](main.tex)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[**`1zad`**](1zad) | Tue, 06 Jul 2021 11:50:45 +0200 | 28K
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:39 +0200 | 156K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:39 +0200 | 8.0K

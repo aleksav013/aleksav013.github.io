@@ -1,12 +1,8 @@
-Index of ./Paskalova teorema
+# Index of ./Paskalova teorema
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-612K [Paskalova teorema](Paskalova teorema)
-
-620K [Paskal_prezentacija](Paskal_prezentacija)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[**`Paskalova teorema`**](Paskalova teorema) | Tue, 06 Jul 2021 11:50:45 +0200 | 612K
+[**`Paskal_prezentacija`**](Paskal_prezentacija) | Tue, 06 Jul 2021 11:50:45 +0200 | 620K

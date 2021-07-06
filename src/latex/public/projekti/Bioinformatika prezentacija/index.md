@@ -1,16 +1,10 @@
-Index of ./projekti/Bioinformatika prezentacija
+# Index of ./projekti/Bioinformatika prezentacija
 
-0 [.](.)
-
-0 [..](..)
-
-40K [cpp](cpp)
-
-4.0K [index.md](index.md)
-
-28K [io](io)
-
-312K [main.pdf](main.pdf)
-
-12K [main.tex](main.tex)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[**`cpp`**](cpp) | Tue, 06 Jul 2021 11:50:45 +0200 | 40K
+[**`io`**](io) | Tue, 06 Jul 2021 11:50:45 +0200 | 28K
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:39 +0200 | 312K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:39 +0200 | 12K

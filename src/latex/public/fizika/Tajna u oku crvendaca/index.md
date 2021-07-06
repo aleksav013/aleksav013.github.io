@@ -1,14 +1,9 @@
-Index of ./fizika/Tajna u oku crvendaca
+# Index of ./fizika/Tajna u oku crvendaca
 
-0 [.](.)
-
-0 [..](..)
-
-392K [Capture.PNG](Capture.PNG)
-
-4.0K [index.md](index.md)
-
-364K [main.pdf](main.pdf)
-
-4.0K [main.tex](main.tex)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`Capture.PNG`](Capture.PNG) | Mon, 05 Jul 2021 12:02:38 +0200 | 392K
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 364K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 4.0K

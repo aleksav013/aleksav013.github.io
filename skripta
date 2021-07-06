@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# Generate index pages for LaTeX fs
-find src/latex/public -name "index.md" -delete
-./indexer "src/latex/public"
-
-# Generate rss feed and static site
-rssg rss/index.md "Aleksa Vuckovic" > src/rss.xml
-ssg6 src docs "Aleksa Vuckovic" "https://aleksa.cf" >> /dev/null

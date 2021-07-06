@@ -1,14 +1,9 @@
-Index of ./projekti/Projekat iz racunarstva
+# Index of ./projekti/Projekat iz racunarstva
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-364K [main.pdf](main.pdf)
-
-12K [main.tex](main.tex)
-
-280K [projekat.png](projekat.png)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:39 +0200 | 364K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:39 +0200 | 12K
+[`projekat.png`](projekat.png) | Mon, 05 Jul 2021 12:02:39 +0200 | 280K

@@ -1,14 +1,9 @@
-Index of ./Geometrijske nejednakosti/Geometrijske nejednakosti pre
+# Index of ./Geometrijske nejednakosti/Geometrijske nejednakosti pre
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-336K [main.pdf](main.pdf)
-
-24K [main.tex](main.tex)
-
-232K [Slike](Slike)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 336K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 24K
+[**`Slike`**](Slike) | Tue, 06 Jul 2021 11:50:45 +0200 | 232K

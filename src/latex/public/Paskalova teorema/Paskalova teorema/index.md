@@ -1,20 +1,12 @@
-Index of ./Paskalova teorema/Paskalova teorema
+# Index of ./Paskalova teorema/Paskalova teorema
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-336K [main.pdf](main.pdf)
-
-8.0K [main.tex](main.tex)
-
-52K [Paskal1.PNG](Paskal1.PNG)
-
-60K [Paskal2.PNG](Paskal2.PNG)
-
-72K [Paskal3.PNG](Paskal3.PNG)
-
-80K [Paskal.PNG](Paskal.PNG)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:39 +0200 | 336K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:39 +0200 | 8.0K
+[`Paskal1.PNG`](Paskal1.PNG) | Mon, 05 Jul 2021 12:02:39 +0200 | 52K
+[`Paskal2.PNG`](Paskal2.PNG) | Mon, 05 Jul 2021 12:02:39 +0200 | 60K
+[`Paskal3.PNG`](Paskal3.PNG) | Mon, 05 Jul 2021 12:02:39 +0200 | 72K
+[`Paskal.PNG`](Paskal.PNG) | Mon, 05 Jul 2021 12:02:39 +0200 | 80K

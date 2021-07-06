@@ -1,14 +1,9 @@
-Index of ./Verizni razlomci
+# Index of ./Verizni razlomci
 
-0 [.](.)
-
-0 [..](..)
-
-176K [Abstract Continued Fractions](Abstract Continued Fractions)
-
-180K [Apstrakt Verizni Razlomci](Apstrakt Verizni Razlomci)
-
-4.0K [index.md](index.md)
-
-240K [Verizhni razlomci v1.0](Verizhni razlomci v1.0)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[**`Abstract Continued Fractions`**](Abstract Continued Fractions) | Tue, 06 Jul 2021 11:50:45 +0200 | 176K
+[**`Apstrakt Verizni Razlomci`**](Apstrakt Verizni Razlomci) | Tue, 06 Jul 2021 11:50:45 +0200 | 180K
+[**`Verizhni razlomci v1.0`**](Verizhni razlomci v1.0) | Tue, 06 Jul 2021 11:50:45 +0200 | 240K

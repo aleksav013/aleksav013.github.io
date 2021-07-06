@@ -1,14 +1,9 @@
-Index of ./projekti
+# Index of ./projekti
 
-0 [.](.)
-
-0 [..](..)
-
-280K [Bioinformatika-Aleksa Vuckovic](Bioinformatika-Aleksa Vuckovic)
-
-396K [Bioinformatika prezentacija](Bioinformatika prezentacija)
-
-4.0K [index.md](index.md)
-
-660K [Projekat iz racunarstva](Projekat iz racunarstva)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[**`Bioinformatika-Aleksa Vuckovic`**](Bioinformatika-Aleksa Vuckovic) | Tue, 06 Jul 2021 11:50:45 +0200 | 280K
+[**`Bioinformatika prezentacija`**](Bioinformatika prezentacija) | Tue, 06 Jul 2021 11:50:45 +0200 | 396K
+[**`Projekat iz racunarstva`**](Projekat iz racunarstva) | Tue, 06 Jul 2021 11:50:45 +0200 | 660K

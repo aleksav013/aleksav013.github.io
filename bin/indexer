@@ -1,0 +1,75 @@
+#!/bin/sh
+
+curr="."
+
+dir() {
+    if [ -f "index.html" ]
+    then
+	printf "$curr/index.html exists\n" >> /dev/null
+	return
+    fi
+
+    file="index.md"
+
+    if [ -f "$file" ]
+    then
+	printf "$curr/$file exists\n" >> /dev/null
+    else
+	printf "# Index of $curr\n\n" >> $file
+	printf "File | Date | Size\n" >> $file
+	printf -- "--- | --- | ---\n" >> $file
+	if [ ! "$curr" = "." ]
+	then
+	    printf "[.](.) | |\n" >> $file
+	    printf "[..](..) | |\n" >> $file
+	fi
+
+	for i in *
+	do
+	    if [ ! "$i" = "index.md" ]
+	    then
+		if [ -d "$i" ]
+		then
+		    printf "[**\`$i\`**]($i)" >> $file
+		else
+		    printf "[\`$i\`]($i)" >> $file
+		fi
+		printf " | $(date -d @$(stat -c %Y "$i") '+%a, %d %b %Y %H:%M:%S %z') | $(du -hd0 "$i" | cut -f1)\n" >> "$file"
+	    fi
+	done
+    fi
+}
+
+index() { dir
+    for i in *
+    do
+	if [ -d "$i" ]
+	then
+	    cd "$i"
+	    curr="$curr/$i"
+	    index
+	    cd ..
+	    curr=${curr%/*}
+	fi
+    done
+}
+
+main() {
+    if [ "$1" = "" ]
+    then
+	printf "Please provide directory\n"
+	exit 1
+    fi
+
+    if [ -d "$1" ]
+    then
+	cd "$1"
+    else
+	printf "$1 is not directory\n"
+	exit 2;
+    fi
+
+    index
+}
+
+main $1

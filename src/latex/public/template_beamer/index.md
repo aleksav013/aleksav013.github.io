@@ -1,12 +1,8 @@
-Index of ./template_beamer
+# Index of ./template_beamer
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-68K [main.pdf](main.pdf)
-
-4.0K [main.tex](main.tex)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 68K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 4.0K

@@ -1,14 +1,9 @@
-Index of ./Verizni razlomci/Verizhni razlomci v1.0
+# Index of ./Verizni razlomci/Verizhni razlomci v1.0
 
-0 [.](.)
-
-0 [..](..)
-
-4.0K [index.md](index.md)
-
-220K [main.pdf](main.pdf)
-
-12K [main.tex](main.tex)
-
-4.0K [tikz1.tex](tikz1.tex)
-
+File | Date | Size
+--- | --- | ---
+[.](.) | |
+[..](..) | |
+[`main.pdf`](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 220K
+[`main.tex`](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 12K
+[`tikz1.tex`](tikz1.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 4.0K
