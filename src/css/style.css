@@ -1,6 +1,6 @@
 html {
-    margin-left:30%;
-    margin-right:30%;
+    margin-left:20%;
+    margin-right:20%;
     background-color: #333333;
     color: white;
 }
@@ -10,33 +10,41 @@ a {
 h1 {
     color: #cc342b;
 }
-#navbar ul{
-    list-style-type: none;
+#navbar a {
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+}
+#navbar a:hover {
+    color: #cc342b;
 }
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #198844;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
-    html {
-	margin-left:20%;
-	margin-right:20%;
-    }
-}
-@media only screen and (max-width: 900px) {
     html {
 	margin-left:10%;
 	margin-right:10%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+    html {
+	margin-left:5%;
+	margin-right:5%;
+    }
+}
+@media only screen and (max-width: 700px) {
     html {
 	margin-left:0%;
 	margin-right:0%;
+    }
+    #navbar a {
+	width: 100%;
     }
 }

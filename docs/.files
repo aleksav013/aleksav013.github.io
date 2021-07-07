@@ -1,51 +1,227 @@
+./about/index.md
+./latex/public/Paskalova teorema/Paskalova teorema/main.pdf
+./latex/public/Paskalova teorema/Paskalova teorema/Paskal1.PNG
+./latex/public/Paskalova teorema/Paskalova teorema/main.tex
+./latex/public/Paskalova teorema/Paskalova teorema/Paskal.PNG
+./latex/public/Paskalova teorema/Paskalova teorema/Paskal2.PNG
 ./latex/public/Paskalova teorema/Paskalova teorema/index.md
+./latex/public/Paskalova teorema/Paskalova teorema/Paskal3.PNG
+./latex/public/Paskalova teorema/Paskal_prezentacija/main.pdf
+./latex/public/Paskalova teorema/Paskal_prezentacija/Paskal1.PNG
+./latex/public/Paskalova teorema/Paskal_prezentacija/main.tex
+./latex/public/Paskalova teorema/Paskal_prezentacija/Paskal.PNG
+./latex/public/Paskalova teorema/Paskal_prezentacija/Paskal2.PNG
 ./latex/public/Paskalova teorema/Paskal_prezentacija/index.md
+./latex/public/Paskalova teorema/Paskal_prezentacija/Paskal3.PNG
 ./latex/public/Paskalova teorema/index.md
+./latex/public/projekti/Projekat iz racunarstva/main.pdf
+./latex/public/projekti/Projekat iz racunarstva/main.tex
 ./latex/public/projekti/Projekat iz racunarstva/index.md
+./latex/public/projekti/Projekat iz racunarstva/projekat.png
+./latex/public/projekti/Bioinformatika prezentacija/main.pdf
+./latex/public/projekti/Bioinformatika prezentacija/main.tex
+./latex/public/projekti/Bioinformatika prezentacija/io/3io.txt
+./latex/public/projekti/Bioinformatika prezentacija/io/4io.txt
+./latex/public/projekti/Bioinformatika prezentacija/io/1io.txt
+./latex/public/projekti/Bioinformatika prezentacija/io/5io.txt
+./latex/public/projekti/Bioinformatika prezentacija/io/2io.txt
 ./latex/public/projekti/Bioinformatika prezentacija/io/index.md
+./latex/public/projekti/Bioinformatika prezentacija/io/6io.txt
 ./latex/public/projekti/Bioinformatika prezentacija/index.md
+./latex/public/projekti/Bioinformatika prezentacija/cpp/fasta_main.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/transitions_and_transversions.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/protein_mass.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/protein_mass.h
+./latex/public/projekti/Bioinformatika prezentacija/cpp/gc_content.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/counting.cpp
 ./latex/public/projekti/Bioinformatika prezentacija/cpp/index.md
+./latex/public/projekti/Bioinformatika prezentacija/cpp/fasta.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/rna_splicing.cpp
+./latex/public/projekti/Bioinformatika prezentacija/cpp/rna_splicing.h
 ./latex/public/projekti/index.md
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/main.pdf
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/main.tex
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/3io.txt
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/4io.txt
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/1io.txt
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/5io.txt
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/2io.txt
 ./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/index.md
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/io/6io.txt
 ./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/index.md
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/fasta_main.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/transitions_and_transversions.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/protein_mass.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/protein_mass.h
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/gc_content.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/counting.cpp
 ./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/index.md
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/fasta.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/rna_splicing.cpp
+./latex/public/projekti/Bioinformatika-Aleksa Vuckovic/cpp/rna_splicing.h
+./latex/public/fizika/Probijanje zvucnog zida/BLOODHOUND_LSR_06.jpg
+./latex/public/fizika/Probijanje zvucnog zida/main.pdf
+./latex/public/fizika/Probijanje zvucnog zida/main.tex
+./latex/public/fizika/Probijanje zvucnog zida/Chuck_Yeager.jpg
+./latex/public/fizika/Probijanje zvucnog zida/F-18-diamondback_blast.jpg
+./latex/public/fizika/Probijanje zvucnog zida/Thrust_SSC.jpg
 ./latex/public/fizika/Probijanje zvucnog zida/index.md
+./latex/public/fizika/Probijanje zvucnog zida/Sound_barrier_chart.png
+./latex/public/fizika/fizikavezbeV2/main.pdf
+./latex/public/fizika/fizikavezbeV2/main.tex
+./latex/public/fizika/fizikavezbeV2/slika.jpg
 ./latex/public/fizika/fizikavezbeV2/index.md
+./latex/public/fizika/fizikavezbe3deo/main.pdf
+./latex/public/fizika/fizikavezbe3deo/main.tex
 ./latex/public/fizika/fizikavezbe3deo/index.md
+./latex/public/fizika/fizikavezbe/main.pdf
+./latex/public/fizika/fizikavezbe/main.tex
 ./latex/public/fizika/fizikavezbe/index.md
+./latex/public/fizika/Kondenzatori/main.pdf
+./latex/public/fizika/Kondenzatori/main.tex
 ./latex/public/fizika/Kondenzatori/index.md
+./latex/public/fizika/fizikavezbe2deo/main.pdf
+./latex/public/fizika/fizikavezbe2deo/main.tex
+./latex/public/fizika/fizikavezbe2deo/slika.jpg
 ./latex/public/fizika/fizikavezbe2deo/index.md
 ./latex/public/fizika/index.md
+./latex/public/fizika/Tajna u oku crvendaca/main.pdf
+./latex/public/fizika/Tajna u oku crvendaca/main.tex
+./latex/public/fizika/Tajna u oku crvendaca/Capture.PNG
 ./latex/public/fizika/Tajna u oku crvendaca/index.md
+./latex/public/Geometrijske nejednakosti/Apstrakt Geometrijske Nejednakosti/main.pdf
+./latex/public/Geometrijske nejednakosti/Apstrakt Geometrijske Nejednakosti/main.tex
 ./latex/public/Geometrijske nejednakosti/Apstrakt Geometrijske Nejednakosti/index.md
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/main.pdf
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/main.tex
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika4.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika666.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika3.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika91.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika5.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika2.PNG
 ./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/index.md
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika8.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Ptolomej.png
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika9.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika66.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slika1.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/Slike/Slikica.PNG
 ./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti pre/index.md
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/main.pdf
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/main.tex
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika4.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika666.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika3.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/NZM.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika91.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika5.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika2.PNG
 ./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/index.md
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika8.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Ptolomej.png
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika9.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika66.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slika1.PNG
+./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/Slike/Slikica.PNG
 ./latex/public/Geometrijske nejednakosti/Geometrijske nejednakosti posle/index.md
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika12.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/main.pdf
+./latex/public/Geometrijske nejednakosti/Prezentacija/main.tex
+./latex/public/Geometrijske nejednakosti/Prezentacija/NZM.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika99.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika91.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika5.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika2.PNG
 ./latex/public/Geometrijske nejednakosti/Prezentacija/index.md
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika8.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika667.png
+./latex/public/Geometrijske nejednakosti/Prezentacija/Ptolomej.png
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika9.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika1.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slikica.PNG
+./latex/public/Geometrijske nejednakosti/Prezentacija/Slika11.PNG
+./latex/public/Geometrijske nejednakosti/Abstract Geometric Inequalities/main.pdf
+./latex/public/Geometrijske nejednakosti/Abstract Geometric Inequalities/main.tex
 ./latex/public/Geometrijske nejednakosti/Abstract Geometric Inequalities/index.md
 ./latex/public/Geometrijske nejednakosti/index.md
+./latex/public/template/main.pdf
+./latex/public/template/main.tex
 ./latex/public/template/index.md
+./latex/public/labvezbe/main.pdf
+./latex/public/labvezbe/main.tex
 ./latex/public/labvezbe/index.md
+./latex/public/template_beamer/main.pdf
+./latex/public/template_beamer/main.tex
 ./latex/public/template_beamer/index.md
 ./latex/public/index.md
+./latex/public/domaci/Domaci iz analize/main.pdf
+./latex/public/domaci/Domaci iz analize/main.tex
+./latex/public/domaci/Domaci iz analize/1zad/1v.tex
+./latex/public/domaci/Domaci iz analize/1zad/1dj.tex
+./latex/public/domaci/Domaci iz analize/1zad/1b.tex
+./latex/public/domaci/Domaci iz analize/1zad/1d.tex
+./latex/public/domaci/Domaci iz analize/1zad/1a.tex
 ./latex/public/domaci/Domaci iz analize/1zad/index.md
+./latex/public/domaci/Domaci iz analize/1zad/1g.tex
 ./latex/public/domaci/Domaci iz analize/index.md
+./latex/public/domaci/analiza/main.pdf
+./latex/public/domaci/analiza/main.tex
 ./latex/public/domaci/analiza/index.md
+./latex/public/domaci/pismo maturantima podgorica/main.pdf
+./latex/public/domaci/pismo maturantima podgorica/main.tex
 ./latex/public/domaci/pismo maturantima podgorica/index.md
+./latex/public/domaci/Oblak-u-pantalonama-Aleksa-Vuckovic/main.pdf
+./latex/public/domaci/Oblak-u-pantalonama-Aleksa-Vuckovic/main.tex
 ./latex/public/domaci/Oblak-u-pantalonama-Aleksa-Vuckovic/index.md
+./latex/public/domaci/prsteni_laag/main.pdf
+./latex/public/domaci/prsteni_laag/main.tex
 ./latex/public/domaci/prsteni_laag/index.md
 ./latex/public/domaci/index.md
+./latex/public/domaci/Pismeni zadatak iz srpskog/main.pdf
+./latex/public/domaci/Pismeni zadatak iz srpskog/main.tex
 ./latex/public/domaci/Pismeni zadatak iz srpskog/index.md
+./latex/public/domaci/Domaci zadatak iz geometrije/main.pdf
+./latex/public/domaci/Domaci zadatak iz geometrije/main.tex
 ./latex/public/domaci/Domaci zadatak iz geometrije/index.md
+./latex/public/domaci/domaci iz hemije/main.pdf
+./latex/public/domaci/domaci iz hemije/main.tex
 ./latex/public/domaci/domaci iz hemije/index.md
+./latex/public/domaci/Balzak, Aleksa Vučković 2c/main.pdf
+./latex/public/domaci/Balzak, Aleksa Vučković 2c/main.tex
 ./latex/public/domaci/Balzak, Aleksa Vučković 2c/index.md
+./latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/main.pdf
+./latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/tikz1.tex
+./latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/main.tex
 ./latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/index.md
+./latex/public/Verizni razlomci/Verizhni razlomci v1.0/main.pdf
+./latex/public/Verizni razlomci/Verizhni razlomci v1.0/tikz1.tex
+./latex/public/Verizni razlomci/Verizhni razlomci v1.0/main.tex
 ./latex/public/Verizni razlomci/Verizhni razlomci v1.0/index.md
+./latex/public/Verizni razlomci/Abstract Continued Fractions/main.pdf
+./latex/public/Verizni razlomci/Abstract Continued Fractions/main.tex
 ./latex/public/Verizni razlomci/Abstract Continued Fractions/index.md
 ./latex/public/Verizni razlomci/index.md
+./latex/public/Lopta prezentacija/lopta.tex
+./latex/public/Lopta prezentacija/opisana/valjak.tex
+./latex/public/Lopta prezentacija/opisana/kupa.tex
+./latex/public/Lopta prezentacija/opisana/piramida.tex
 ./latex/public/Lopta prezentacija/opisana/index.md
+./latex/public/Lopta prezentacija/opisana/prizma.tex
+./latex/public/Lopta prezentacija/main.tex
+./latex/public/Lopta prezentacija/upisana/valjak.tex
+./latex/public/Lopta prezentacija/upisana/kupa.tex
+./latex/public/Lopta prezentacija/upisana/piramida.tex
 ./latex/public/Lopta prezentacija/upisana/index.md
+./latex/public/Lopta prezentacija/upisana/prizma.tex
 ./latex/public/Lopta prezentacija/index.md
+./latex/public/Lopta prezentacija/logo.png
+./latex/public/Lopta prezentacija/zadaci/1zad.tex
+./latex/public/Lopta prezentacija/zadaci/2zad.tex
 ./latex/public/Lopta prezentacija/zadaci/index.md
+./latex/public/Lopta prezentacija/zadaci/3zad.tex
+./latex/index.md
+./gnulinux/index.md
+./index.md
 ./rss.xml
+./css/style.css

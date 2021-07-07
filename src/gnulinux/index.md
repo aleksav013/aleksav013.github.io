@@ -1,4 +1,4 @@
-# GNU/Linux 
+## GNU/Linux 
 
 My Linux story starts with falling for the Arch superiority meme, and installing it for 100 times in VirtualBox VM.
 I started getting into UNIX philosophy soon after and started using suckless software and praying to our and only Luke Smith and also Mental Outlaw.
@@ -9,7 +9,7 @@ I installed things like FreeNAS and also had Arch and Debian home server on whic
 I also wanted to buy a RPi for quite much time but I did not have money.
 I would like to have home DNS server(PiHole) or a simple website hosting, way to access my home network or a simple cronjob machine. It would use less power than LEDs in my room so it would be perfect.
 
-## Using GNU/Linux on hardware
+### Using GNU/Linux on hardware
 
 Just few months ago, after realizing that AUR has all proprietary bullshit I need for school, and Bill Gates spyware started crashing again, I decided it is enough.
 Took me a week to get adapted and I could not be happier.
@@ -17,7 +17,7 @@ After a few months of using Arch and messing with my friends for using 10 times 
 I first removed (soy)stemd, thus following Luke's path more than I needed.
 After that, I went on to remove all unused modules from kernel and trim it until it was perfect.
 
-## Distros I tried or used
+### Distros I tried or used
 - Arch, Artix
 - Gentoo
 - Void
@@ -25,11 +25,11 @@ After that, I went on to remove all unused modules from kernel and trim it until
 - Kali, Parrot
 - FreeNAS
 
-## UNIX Plans
+### UNIX Plans
 - Get into BSD(M)
 - LFS
 
-## Software I use
+### Software I use
 - Neovim
 - Suckless utilities
     - [my dwm](https://github.com/aleksav013/dwm)
