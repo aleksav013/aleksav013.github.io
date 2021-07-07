@@ -30,9 +30,9 @@ dir() {
 	    then
 		if [ -d "$i" ]
 		then
-		    printf "[**<span>$i</span>**]($i)" >> $file
+		    printf "[**$i**]($i)" >> $file
 		else
-		    printf "[<span>$i</span>]($i)" >> $file
+		    printf "[$i]($i)" >> $file
 		fi
 		printf " | $(date -d @$(stat -c %Y "$i") '+%a, %d %b %Y %H:%M:%S %z') | $(du -hd0 "$i" | cut -f1)\n" >> "$file"
 	    fi

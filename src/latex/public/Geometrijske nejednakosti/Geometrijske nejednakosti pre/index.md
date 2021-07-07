@@ -4,6 +4,6 @@ File | Date | Size
 :--- | --- | ---
 [.](.) | |
 [..](..) | |
-[<span>main.pdf</span>](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 336K
-[<span>main.tex</span>](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 24K
-[**<span>Slike</span>**](Slike) | Wed, 07 Jul 2021 13:44:28 +0200 | 232K
+[main.pdf](main.pdf) | Mon, 05 Jul 2021 12:02:38 +0200 | 336K
+[main.tex](main.tex) | Mon, 05 Jul 2021 12:02:38 +0200 | 24K
+[**Slike**](Slike) | Wed, 07 Jul 2021 14:41:59 +0200 | 232K

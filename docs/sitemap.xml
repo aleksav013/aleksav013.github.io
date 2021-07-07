@@ -4,6 +4,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://aleksa.cf/about/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/Paskalova teorema/Paskalova teorema/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/Paskalova teorema/Paskal_prezentacija/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/Paskalova teorema/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
@@ -39,11 +40,11 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://aleksa.cf/latex/public/domaci/Domaci iz analize/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/analiza/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/pismo maturantima podgorica/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/latex/public/domaci/Oblak-u-pantalonama-Aleksa-Vuckovic/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/prsteni_laag/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/Pismeni zadatak iz srpskog/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/Domaci zadatak iz geometrije/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
-<url><loc>https://aleksa.cf/latex/public/domaci/Oblak_u_pantalonama-Aleksa_Vuckovic/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/domaci iz hemije/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/domaci/Balzak, Aleksa Vučković 2c/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/Verizni razlomci/Apstrakt Verizni Razlomci/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
@@ -55,5 +56,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/public/Lopta prezentacija/zadaci/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/latex/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
+<url><loc>https://aleksa.cf/gnulinux/</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 <url><loc>https://aleksa.cf/index.html</loc><lastmod>2021-07-07</lastmod><priority>1.0</priority></url>
 </urlset>

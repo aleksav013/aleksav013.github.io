@@ -10,6 +10,18 @@ a {
 h1 {
     color: #cc342b;
 }
+#navbar ul{
+    list-style-type: none;
+}
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
     html {
 	margin-left:20%;
