@@ -4,6 +4,6 @@ File | Date | Size
 :--- | --- | ---
 [.](.) | |
 [..](..) | |
-[**<span>Bioinformatika-Aleksa Vuckovic</span>**](Bioinformatika-Aleksa Vuckovic) | Tue, 06 Jul 2021 16:44:54 +0200 | 280K
-[**<span>Bioinformatika prezentacija</span>**](Bioinformatika prezentacija) | Tue, 06 Jul 2021 16:44:54 +0200 | 396K
-[**<span>Projekat iz racunarstva</span>**](Projekat iz racunarstva) | Tue, 06 Jul 2021 16:44:54 +0200 | 660K
+[**<span>Bioinformatika-Aleksa Vuckovic</span>**](Bioinformatika-Aleksa Vuckovic) | Wed, 07 Jul 2021 13:44:28 +0200 | 280K
+[**<span>Bioinformatika prezentacija</span>**](Bioinformatika prezentacija) | Wed, 07 Jul 2021 13:44:28 +0200 | 396K
+[**<span>Projekat iz racunarstva</span>**](Projekat iz racunarstva) | Wed, 07 Jul 2021 13:44:28 +0200 | 660K
