@@ -10,12 +10,22 @@ a {
 h1 {
     color: #cc342b;
 }
-#navbar a {
-  padding: 1%;
-  text-align: center;
-  text-decoration: none;
+.bar li {
+    display: inline; 
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
 }
-#navbar a:hover {
+.bar a:hover {
+    color: #cc342b;
+}
+.sub li {
+    display: inline; 
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+.sub a:hover {
     color: #cc342b;
 }
 #footer {

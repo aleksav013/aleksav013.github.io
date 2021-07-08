@@ -1,5 +1,7 @@
 #!/bin/sh
 
+## My shell script to make index.md page for directory listing
+
 curr="."
 
 dir() {
@@ -15,7 +17,7 @@ dir() {
     then
 	printf "$curr/$file exists\n" >> /dev/null
     else
-	printf "# Index of $curr\n\n" >> $file
+	printf "## Index of $curr\n\n" >> $file
 	printf "File | Date | Size\n" >> $file
 	printf -- ":--- | --- | ---\n" >> $file
 	if [ ! "$curr" = "." ]

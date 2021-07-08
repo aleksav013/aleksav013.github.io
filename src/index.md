@@ -3,7 +3,7 @@ My name is Aleksa, and I am currently 17 years old.
 I started experimenting with GNU/Linux a little more than year ago, and immediatly fell in love with it. 
 I am currently using Artix with my own debloated kernel.
 
-Find more about me <a href="https://aleksa.cf/about/">here</a>
+Find more about me [here](https://aleksa.cf/about/)
 
 ## Goals with making this site
 - Battle for debloated software (especially web)
