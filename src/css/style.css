@@ -1,6 +1,10 @@
 html {
-    margin-left:20%;
-    margin-right:20%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 900px;
+    margin-left: max(calc(50% - 450px), 0px);
     background-color: #333333;
     color: white;
 }
@@ -10,51 +14,30 @@ a {
 h1 {
     color: #cc342b;
 }
-.bar li {
-    display: inline; 
-    padding: 1%;
-    text-align: center;
+.bar * {
+    list-style-type: none;
     text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
 }
 .bar a:hover {
     color: #cc342b;
 }
-.sub li {
-    display: inline; 
-    padding: 1%;
-    text-align: center;
-    text-decoration: none;
+.lvl1 {
+    position: absolute;
 }
-.sub a:hover {
-    color: #cc342b;
+.lvl2 {
+    position: relative;
+    display: none;
 }
-#footer {
+.lvl1:hover .lvl2 {
+    display: block;
+}
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #198844;
     text-align: center;
-}
-
-@media only screen and (max-width: 1200px) {
-    html {
-	margin-left:10%;
-	margin-right:10%;
-    }
-}
-@media only screen and (max-width: 900px) {
-    html {
-	margin-left:5%;
-	margin-right:5%;
-    }
-}
-@media only screen and (max-width: 700px) {
-    html {
-	margin-left:0%;
-	margin-right:0%;
-    }
-    #navbar a {
-	width: 100%;
-    }
 }

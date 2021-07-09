@@ -1,6 +1,6 @@
 ## LaTeX
 
-You can find all my LaTeX papers <a href="https://aleksa.cf/latex/public/">here</a>
+You can find all my LaTeX papers [here](https://aleksa.cf/other/latex/public/)
 
 ### LaTeX journey
 While currently writing in markdown, I must not forget my LaTeX journey.
