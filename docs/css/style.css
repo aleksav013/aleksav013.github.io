@@ -4,7 +4,8 @@ html {
 }
 body {
     max-width: 900px;
-    margin-left: max(calc(50% - 450px), 0px);
+    margin: auto;
+    margin-top: 20px;
     background-color: #333333;
     color: white;
 }
@@ -14,11 +15,22 @@ a {
 h1 {
     color: #cc342b;
 }
-.bar * {
+.bar {
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+.bar li {
     list-style-type: none;
-    text-decoration: none;
     display: inline-block;
-    padding: 5px 10px;
+    margin-right: 10px;
+}
+.bar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #198844;
+    border-style: solid;
+    border-color: black;
 }
 .bar a:hover {
     color: #cc342b;
@@ -27,8 +39,20 @@ h1 {
     position: absolute;
 }
 .lvl2 {
-    position: relative;
     display: none;
+    position: relative;
+}
+.lvl2 {
+    padding-left: 0;
+}
+.lvl2 li {
+    display: block;
+    margin-right: 0;
+}
+.lvl2 a {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
 }
 .lvl1:hover .lvl2 {
     display: block;
