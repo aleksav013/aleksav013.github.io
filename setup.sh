@@ -7,5 +7,5 @@
 
 # Update rss feed and generate static site
 rm docs/.files
-bin/rssg rss/index.md "Aleksa Vuckovic" > src/rss.xml
+bin/rssg src/rss.md "Aleksa Vuckovic" > src/rss.xml
 bin/ssg6 src docs "Aleksa Vuckovic" "https://aleksa.cf" >> /dev/null

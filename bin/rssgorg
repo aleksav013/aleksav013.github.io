@@ -117,7 +117,8 @@ rel_to_abs_urls() {
 
 
 date_rfc_822() {
-	date -d "@$1" '+%a, %d %b %Y %H:%M:%S %z'
+	date -j '+%a, %d %b %Y %H:%M:%S %z' \
+	"$(echo "$1"| tr -cd '[:digit:]')0000"
 }
 
 
@@ -154,9 +155,10 @@ render_item() {
 <item>
 <guid>'"$guid"'</guid>
 <link>'"$guid"'</link>
-<pubDate>'"$(date_rfc_822 "$(date -d "$date" +%s)")"'</pubDate>
+<pubDate>'"$(date_rfc_822 "$date")"'</pubDate>
 <title>'"$title"'</title>
 <description><![CDATA[
+
 '"$description"'
 
 ]]></description>
@@ -178,7 +180,7 @@ render_feed() {
 <title>'"$title"'</title>
 <description>'"$description"'</description>
 <link>'"$base_url"'/</link>
-<lastBuildDate>'"$(date_rfc_822 "$(date +%s)")"'</lastBuildDate>
+<lastBuildDate>'"$(date_rfc_822 date)"'</lastBuildDate>
 '"$(cat)"'
 </channel></rss>'
 }

@@ -1,5 +1,7 @@
+./rss/PocetakRSSfeeda.html
 ./files/rss.svg
 ./files/github.png
+./rss.md
 ./about/index.md
 ./gnulinux/index.md
 ./index.md
@@ -227,5 +229,5 @@
 ./other/latex/public/Lopta prezentacija/zadaci/3zad.tex
 ./other/latex/index.md
 ./other/index.md
+./style.css
 ./rss.xml
-./css/style.css
