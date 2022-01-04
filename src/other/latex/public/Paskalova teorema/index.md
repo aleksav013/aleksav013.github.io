@@ -4,5 +4,5 @@ File | Date | Size
 :--- | --- | ---
 [.](.) | |
 [..](..) | |
-[**Paskalova teorema**](Paskalova teorema) | Thu, 08 Jul 2021 16:02:04 +0200 | 612K
-[**Paskal_prezentacija**](Paskal_prezentacija) | Thu, 08 Jul 2021 16:02:04 +0200 | 620K
+[**Paskalova teorema**](Paskalova teorema) | Mon, 05 Jul 2021 12:02:39 +0200 | 612K
+[**Paskal_prezentacija**](Paskal_prezentacija) | Mon, 05 Jul 2021 12:02:39 +0200 | 620K

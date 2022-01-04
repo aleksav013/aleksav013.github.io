@@ -5,21 +5,43 @@
 <title>Aleksa Vuckovic</title>
 <description>Here I can say something about me</description>
 <link>https://aleksa.cf/</link>
-<lastBuildDate>Sun, 11 Jul 2021 12:18:53 +0200</lastBuildDate>
+<lastBuildDate>Tue, 04 Jan 2022 12:09:31 +0100</lastBuildDate>
 
 <item>
-<guid>https://aleksa.cf/rss/PocetakRSSfeeda.html</guid>
-<link>https://aleksa.cf/rss/PocetakRSSfeeda.html</link>
+<guid>https://aleksa.cf/rss/PocetakRSS.html</guid>
+<link>https://aleksa.cf/rss/PocetakRSS.html</link>
 <pubDate>Wed, 07 Jul 2021 13:15:12 +0200</pubDate>
 <title>Pocetak RSS feeda</title>
 <description><![CDATA[
-<h1>Pocetak RSS feeda</h1>
+<h1 id="Pocetak%20RSS%20feeda">Pocetak RSS feeda</h1>
 
 <p>Dosao je i taj dan da sam krenuo sa mojim rss feedom.</p>
 
 <p>Mislim da je ovo mnogo bojli, privatniji nacin za izrazavanje stava i misljenja nego na drustvenim mrezama na kojima je sadrzaj strogo regulisan.</p>
 
 <p>Ako ovo citate gg</p>
+
+]]></description>
+</item>
+
+<item>
+<guid>https://aleksa.cf/rss/RPi.html</guid>
+<link>https://aleksa.cf/rss/RPi.html</link>
+<pubDate>Sat, 11 Sep 2021 00:00:00 +0200</pubDate>
+<title>Raspberry Pi home server</title>
+<description><![CDATA[
+<h1 id="Raspberry%20Pi%20home%20server">Raspberry Pi home server</h1>
+
+<h2 id="Use%20cases">Use cases</h2>
+
+<ul>
+<li>PiHole &#38; PiVPN(OpenVPN)</li>
+<li>this website</li>
+<li>mail server</li>
+<li>xmpp messaging</li>
+</ul>
+
+<h2 id="Which%20Pi%20I%20choose">Which Pi I choose</h2>
 
 ]]></description>
 </item>
