@@ -7,7 +7,7 @@ curr="."
 dir() {
     if [ -f "index.html" ]
     then
-	printf "$curr/index.html exists\n" >> /dev/null
+	printf '%s/index.html exists\n' "$curr" >> /dev/null
 	return
     fi
 
@@ -15,14 +15,16 @@ dir() {
 
     if [ -f "$file" ]
     then
-	printf "$curr/$file exists\n" >> /dev/null
+	    printf '%s/%s exists\n' "$curr" "$file" >> /dev/null
     else
-	printf "## Index of $curr\n\n" >> $file
-	printf "File | Date | Size\n" >> $file
-	printf -- ":--- | --- | ---\n" >> $file
-	if [ ! "$curr" = "." ]
+        {
+        printf '## Index of %s\n\n' "$curr"
+        printf "File | Date | Size\n"
+        printf -- ":--- | --- | ---\n"
+        } >> $file
+    if [ ! "$curr" = "." ]
 	then
-	    printf "[.](.) | |\n" >> $file
+        printf "[.](.) | |\n" >> $file
 	    printf "[..](..) | |\n" >> $file
 	fi
 
@@ -32,11 +34,11 @@ dir() {
 	    then
 		if [ -d "$i" ]
 		then
-		    printf "[**$i**]($i)" >> $file
+		    printf '[**%s**](%s)' "$i" "$i" >> $file
 		else
-		    printf "[$i]($i)" >> $file
+		    printf '[%s](%s)' "$i" "$i" >> $file
 		fi
-		printf " | $(date -d @$(stat -c %W "$i") '+%a, %d %b %Y %H:%M:%S %z') | $(du -hd0 "$i" | cut -f1)\n" >> "$file"
+		printf ' | %s | %s\n' "$(date -d "@$(stat -c %W "$i")" '+%a, %d %b %Y %H:%M:%S %z')" "$(du -hd0 "$i" | cut -f1)" >> "$file"
 	    fi
 	done
     fi
@@ -47,7 +49,7 @@ index() { dir
     do
 	if [ -d "$i" ]
 	then
-	    cd "$i"
+	    cd "$i" || exit
 	    curr="$curr/$i"
 	    index
 	    cd ..
@@ -65,13 +67,13 @@ main() {
 
     if [ -d "$1" ]
     then
-	cd "$1"
+	cd "$1" || exit
     else
-	printf "$1 is not directory\n"
+	printf '%s is not directory\n' "$1"
 	exit 2;
     fi
 
     index
 }
 
-main $1
+main "$1"

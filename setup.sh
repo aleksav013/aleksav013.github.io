@@ -6,9 +6,9 @@ bin/indexer "src/other/latex/public"
 # Currently not needed, uncomment previous 2 lines when changing LaTeX filesystem
 
 # Update rss feed and generate static site
-cd rss/
+cd rss/ || exit
 for i in *; do
-    lowdown $i > ${i%.*}.html
+    lowdown "$i" > "${i%.*}.html"
 done
 cd ..
 
